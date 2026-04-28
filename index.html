@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sagsoul Holdings — Your Business, Automated.</title>
   <meta name="description" content="Sagsoul builds high-performance web systems for the Zimbabwean market. AI-accelerated engineering that speaks Human, not Technical." />
+  <!-- Favicon — Sagsoul icon mark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 126'%3E%3Crect fill='%230D0D0D' x='0' y='0' width='74' height='126'/%3E%3Crect fill='%23F5F3EE' x='7' y='7' width='60' height='14'/%3E%3Crect fill='%23F5F3EE' x='7' y='7' width='14' height='58'/%3E%3Crect fill='%230891B2' x='7' y='43' width='60' height='14'/%3E%3Crect fill='%23F5F3EE' x='53' y='43' width='14' height='58'/%3E%3Crect fill='%23F5F3EE' x='7' y='87' width='60' height='14'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 126'%3E%3Crect fill='%230D0D0D' x='0' y='0' width='74' height='126'/%3E%3Crect fill='%23F5F3EE' x='7' y='7' width='60' height='14'/%3E%3Crect fill='%23F5F3EE' x='7' y='7' width='14' height='58'/%3E%3Crect fill='%230891B2' x='7' y='43' width='60' height='14'/%3E%3Crect fill='%23F5F3EE' x='53' y='43' width='14' height='58'/%3E%3Crect fill='%23F5F3EE' x='7' y='87' width='60' height='14'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="styles.css" />
   <!-- Outfit + JetBrains Mono fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,9 +41,22 @@
     /* text-navy was dark-on-gold; now must be warm-white-on-teal */
     .text-navy { color: #F5F3EE !important; }
 
+    /* Subtle warm noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      opacity: 0.6;
+    }
     /* Subtle gradient glow behind hero text */
     .hero-glow {
-      background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(8,145,178,0.12) 0%, transparent 70%);
+      background:
+        radial-gradient(ellipse 70% 60% at 20% 80%, rgba(8,145,178,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 50% at 80% 20%, rgba(245,243,238,0.04) 0%, transparent 55%),
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(8,145,178,0.10) 0%, transparent 70%);
     }
     /* Teal solid colour — replaces the old gold gradient */
     .text-gold-gradient {
@@ -51,9 +67,24 @@
       transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
     .card-hover:hover {
-      box-shadow: 0 0 0 1px rgba(8,145,178,0.4), 0 20px 60px rgba(0,0,0,0.4);
+      box-shadow: 0 0 0 1px rgba(8,145,178,0.35), 0 20px 60px rgba(0,0,0,0.35), 0 4px 24px rgba(245,243,238,0.03);
       transform: translateY(-4px);
     }
+    /* Warmer card surfaces */
+    [class*="bg-charcoal"], .bg-charcoal {
+      background-color: #1A1917 !important;
+    }
+    [class*="bg-navy-800"], .bg-navy-800 {
+      background-color: #111110 !important;
+    }
+    [class*="bg-navy-700"], .bg-navy-700 {
+      background-color: #1E1D1B !important;
+    }
+    /* Alternating section warmth */
+    #ecosystem, #pricing, #contact {
+      background-image: radial-gradient(ellipse 100% 100% at 50% 0%, rgba(245,243,238,0.015) 0%, transparent 70%);
+    }
+    h1 { color: #F5F3EE; }
   </style>
 </head>
 
@@ -127,7 +158,7 @@
 
     <div class="relative max-w-4xl mx-auto">
       <!-- Hero SVG logo mark -->
-      <div style="margin-bottom:32px;position:relative;z-index:1;">
+      <div style="margin-bottom:32px;position:relative;z-index:1;display:flex;justify-content:center;align-items:center;">
         <svg width="360" height="124" viewBox="0 0 480 166" xmlns="http://www.w3.org/2000/svg">
           <rect fill="#F5F3EE" x="20" y="20" width="74" height="18"/>
           <rect fill="#F5F3EE" x="20" y="20" width="18" height="72"/>
@@ -147,11 +178,13 @@
       </div>
 
       <!-- Headline -->
-      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight mb-6">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight mb-6" style="color:#F5F3EE;">
         Your Business,<br />
         <span class="text-gold-gradient">Automated.</span><br />
         No Technical Jargon Required.
       </h1>
+
+      <div style="width:48px;height:3px;background:linear-gradient(90deg,#0891B2,#0E7490);border-radius:2px;margin:24px auto;opacity:0.8;"></div>
 
       <!-- Sub-headline -->
       <p class="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -344,8 +377,10 @@
   <!-- ══════════════════════════════
        THE SAGSOUL ADVANTAGE
   ══════════════════════════════ -->
-  <section id="advantage" class="py-24 px-4 sm:px-6">
+  <section id="advantage" class="py-24 px-4 sm:px-6" style="position:relative;overflow:hidden;">
     <div class="max-w-6xl mx-auto">
+      <!-- Warm ambient glow blob -->
+      <div aria-hidden="true" style="position:absolute;top:-120px;left:50%;transform:translateX(-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(245,243,238,0.03) 0%,transparent 70%);pointer-events:none;border-radius:50%;"></div>
       <!-- Section header -->
       <div class="text-center mb-16">
         <p class="text-gold font-semibold text-sm uppercase tracking-widest mb-3">The Sagsoul Advantage</p>
