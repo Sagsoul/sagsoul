@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
-    /* ── Brand colour tokens ── */
+    /* ── Brand colour tokens (kept for any inline var() references) ── */
     :root {
       --black:       #0D0D0D;
       --white:       #F5F3EE;
@@ -29,62 +29,16 @@
       --n800: #444441;
       --n900: #2C2C2A;
 
-      /* Override Tailwind theme tokens → new brand palette */
+      /* Override Tailwind theme tokens → light brand palette */
       --font-sans:      'Outfit', 'Helvetica Neue', Arial, sans-serif;
-      --color-navy:     #0D0D0D;
-      --color-navy-800: #0D0D0D;
-      --color-navy-700: #2C2C2A;
+      --color-navy:     #F8F7F5;
+      --color-navy-800: #F1EFEA;
+      --color-navy-700: #FFFFFF;
       --color-gold:     #0891B2;
       --color-gold-400: #0E7490;
-      --color-charcoal: #2C2C2A;
+      --color-charcoal: #FFFFFF;
     }
-
-    /* text-navy was dark-on-gold; now must be warm-white-on-teal */
-    .text-navy { color: #F5F3EE !important; }
-
-    /* Subtle warm noise texture overlay */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
-      opacity: 0.6;
-    }
-    /* Subtle gradient glow behind hero text */
-    .hero-glow {
-      background:
-        radial-gradient(ellipse 70% 60% at 20% 80%, rgba(8,145,178,0.06) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 50% at 80% 20%, rgba(245,243,238,0.04) 0%, transparent 55%),
-        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(8,145,178,0.10) 0%, transparent 70%);
-    }
-    /* Teal solid colour — replaces the old gold gradient */
-    .text-gold-gradient {
-      color: #0891B2;
-    }
-    /* Card border glow on hover */
-    .card-hover {
-      transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    .card-hover:hover {
-      box-shadow: 0 0 0 1px rgba(8,145,178,0.35), 0 20px 60px rgba(0,0,0,0.35), 0 4px 24px rgba(245,243,238,0.03);
-      transform: translateY(-4px);
-    }
-    /* Warmer card surfaces */
-    [class*="bg-charcoal"], .bg-charcoal {
-      background-color: #1A1917 !important;
-    }
-    [class*="bg-navy-800"], .bg-navy-800 {
-      background-color: #111110 !important;
-    }
-    [class*="bg-navy-700"], .bg-navy-700 {
-      background-color: #1E1D1B !important;
-    }
-    /* Alternating section warmth */
-    #ecosystem, #pricing, #contact {
-      background-image: radial-gradient(ellipse 100% 100% at 50% 0%, rgba(245,243,238,0.015) 0%, transparent 70%);
-    }
+    /* All visual styling now lives in light-theme.css — this block intentionally minimal */
   </style>
 </head>
 

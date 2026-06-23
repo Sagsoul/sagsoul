@@ -399,3 +399,154 @@ textarea:focus-visible,
   box-shadow: var(--shadow-focus-ring);
   border-radius: 8px;
 }
+
+/* ============================================================
+   BELT-AND-BRACES: force light mode on every section regardless
+   of cascade order or inline style attempts.
+   ============================================================ */
+
+/* Every section gets a light background by default */
+section,
+section.bg-navy,
+section.bg-navy-800,
+section[class*="bg-navy"],
+section[class*="bg-charcoal"] {
+  background-color: var(--bg-base) !important;
+}
+
+/* Alternating banded sections (ecosystem, pricing, contact) */
+#ecosystem,
+#pricing,
+#contact,
+section#ecosystem,
+section#pricing,
+section#contact {
+  background-color: var(--bg-subtle) !important;
+  background-image: none !important;
+}
+
+/* Every card on the page — white with brand border and shadow */
+div.card-hover,
+div.bg-charcoal,
+div[class*="bg-charcoal"],
+section div[class~="bg-charcoal"],
+section .card-hover.bg-charcoal,
+.card-hover.bg-charcoal,
+.card-hover.bg-navy-700,
+section .card-hover.bg-navy-700,
+div.bg-navy-700,
+div[class*="bg-navy-700"] {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+  border: 1px solid var(--border-default) !important;
+  color: var(--text-body) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+/* Highlighted card (Custom POS pricing, Obsessive Testing advantage) */
+.card-hover.bg-navy-700,
+div.bg-navy-700,
+div[class*="bg-navy-700"] {
+  border-color: var(--brand-teal) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+/* Inside every card, force readable text colours */
+section .card-hover h1,
+section .card-hover h2,
+section .card-hover h3,
+section .card-hover h4,
+section .card-hover h5,
+section .card-hover strong,
+div.card-hover h1,
+div.card-hover h2,
+div.card-hover h3,
+div.card-hover h4,
+div.card-hover h5,
+div.card-hover strong {
+  color: var(--text-primary) !important;
+}
+section .card-hover p,
+section .card-hover li,
+section .card-hover span:not(.text-gold):not([class*="bg-gold"]):not([class*="bg-brand-teal"]),
+div.card-hover p,
+div.card-hover li {
+  color: var(--text-body) !important;
+}
+
+/* Kill any dark gradient overlays inside sections */
+section [style*="background-image: radial-gradient"],
+section [style*="background:radial-gradient"] {
+  background-image: none !important;
+}
+
+/* Body and html — final say */
+html, body, body.bg-navy {
+  background-color: var(--bg-base) !important;
+  color: var(--text-body) !important;
+}
+
+/* Nav background — solid, slightly translucent, brand light */
+header.fixed,
+header[class*="bg-navy"] {
+  background-color: rgba(248, 247, 245, 0.92) !important;
+  border-bottom: 1px solid var(--border-default) !important;
+}
+
+/* Mobile drawer — light too */
+input#mobile-menu-toggle:checked ~ div.bg-navy,
+input#mobile-menu-toggle:checked ~ div[class*="bg-navy"],
+header div.peer-checked\:flex.bg-navy,
+header div[class*="bg-navy"]:not(footer *) {
+  background-color: var(--bg-base) !important;
+}
+header .text-white\/70 { color: var(--text-secondary) !important; }
+
+/* Mobile drawer links */
+header div[class*="peer-checked"] a { color: var(--text-secondary) !important; }
+header div[class*="peer-checked"] a:hover { color: var(--brand-teal) !important; }
+
+/* Hero rings — barely-there grey on light bg */
+.border-white\/5 { border-color: rgba(13, 13, 13, 0.06) !important; }
+.border-white\/10 { border-color: var(--border-default) !important; }
+
+/* Feature-list checkmark circles inside cards — teal tint */
+div.card-hover span.bg-gold\/15,
+div.card-hover span.bg-gold\/10,
+div.card-hover span[class*="bg-gold/15"],
+div.card-hover span[class*="bg-gold/10"] {
+  background-color: var(--brand-teal-tint) !important;
+}
+div.card-hover svg.text-gold,
+div.card-hover .text-gold {
+  color: var(--brand-teal) !important;
+}
+
+/* "Most Popular" badge inside pricing card — solid teal pill, white text */
+section#pricing .bg-gold.text-navy,
+section#pricing div.absolute.bg-gold {
+  background-color: var(--brand-teal) !important;
+  color: #FFFFFF !important;
+}
+
+/* "Our Promise" badge inside advantage card — same */
+section#advantage span.bg-gold,
+section#advantage .bg-gold.text-navy {
+  background-color: var(--brand-teal) !important;
+  color: #FFFFFF !important;
+}
+
+/* Eyebrow labels in section headers (text-gold) — strong teal */
+section p.text-gold {
+  color: var(--brand-teal) !important;
+}
+
+/* CTA section gold blur orb → soft teal */
+section#contact .bg-gold\/10.blur-3xl,
+section#contact div[class*="bg-gold/10"][class*="blur"] {
+  background-color: rgba(8, 145, 178, 0.18) !important;
+}
+
+/* Footer logo wordmark — must stay readable warm white */
+footer [style*="color:var(--white)"] { color: #F5F3EE !important; }
+footer [style*="color:var(--n600)"] { color: #B4B2A9 !important; }
