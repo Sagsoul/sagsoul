@@ -9,6 +9,7 @@
   <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 74 126'%3E%3Crect fill='%23F8F7F5' x='0' y='0' width='74' height='126'/%3E%3Crect fill='%230D0D0D' x='7' y='7' width='60' height='14'/%3E%3Crect fill='%230D0D0D' x='7' y='7' width='14' height='58'/%3E%3Crect fill='%230891B2' x='7' y='43' width='60' height='14'/%3E%3Crect fill='%230D0D0D' x='53' y='43' width='14' height='58'/%3E%3Crect fill='%230D0D0D' x='7' y='87' width='60' height='14'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="../light-theme.css" />
+  <link rel="stylesheet" href="digital-transformation.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -64,258 +65,671 @@
   </header>
 
   <main>
-    <section id="transformation-hero" class="relative hero-glow pt-40 pb-24 px-4 sm:px-6 overflow-hidden">
-      <div class="max-w-6xl mx-auto text-center">
-        <div style="margin-bottom:32px;position:relative;z-index:1;display:flex;justify-content:center;align-items:center;">
-          <svg width="360" height="124" viewBox="0 0 480 166" xmlns="http://www.w3.org/2000/svg">
-            <rect fill="#0D0D0D" x="20" y="20" width="74" height="18"/>
-            <rect fill="#0D0D0D" x="20" y="20" width="18" height="72"/>
-            <rect fill="#0891B2" x="20" y="74" width="74" height="18"/>
-            <rect fill="#0D0D0D" x="76" y="74" width="18" height="72"/>
-            <rect fill="#0D0D0D" x="20" y="128" width="74" height="18"/>
-            <line x1="113" y1="25" x2="113" y2="141" stroke="#C8C6BE" stroke-width="0.5"/>
-            <text x="130" y="95" font-family="'Outfit','Helvetica Neue',Arial,sans-serif" font-size="58" font-weight="800" letter-spacing="-1" fill="#0D0D0D">SAGSOUL</text>
-            <text x="132" y="121" font-family="'Outfit','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="400" letter-spacing="10" fill="#888780">HOLDINGS</text>
-          </svg>
-        </div>
-        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs font-semibold text-gold mb-8 tracking-wide uppercase">
-          Digital Transformation Consulting · For Established Operators
-        </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight mb-4">From Filing Cabinets to Full Operational Visibility.</h1>
-        <p class="text-lg sm:text-xl text-white/60 max-w-3xl mx-auto mb-8 leading-relaxed"><em>We transition traditional businesses into the modern era — without disrupting the operations that already pay the bills.</em></p>
-        <p class="text-base sm:text-lg text-white/70 max-w-4xl mx-auto mb-10 leading-relaxed">For decades, your business has run on paper trails, personal notebooks, and informal WhatsApp threads. It works — but it doesn't <em>scale</em>, it doesn't <em>report</em>, and it doesn't <em>protect you</em>. Sagsoul installs the digital backbone that turns institutional knowledge into a corporate asset, and daily operations into live, measurable performance.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
-          <a href="#intake" class="bg-gold text-navy font-bold px-8 py-4 rounded-full text-base hover:bg-gold-400 transition-all shadow-lg shadow-gold/20">Schedule a Digital Readiness Audit →</a>
-          <a href="#intake" class="border border-white/20 text-white font-semibold px-8 py-4 rounded-full text-base hover:bg-white/5 transition-all">Download the Executive Brief (PDF)</a>
-        </div>
 
-        <div class="flex flex-wrap justify-center gap-6 text-sm text-white/60">
-          <div><span class="text-xl font-black text-gold">10 mo.</span> Structured Roadmap</div>
-          <div><span class="text-xl font-black text-gold">100%</span> Operational Continuity</div>
-          <div><span class="text-xl font-black text-gold">5-Phase</span> Proven Framework</div>
-          <div><span class="text-xl font-black text-gold">Confidential</span> NDA-First Engagement</div>
-        </div>
+    <!-- ════════════════════════════════════════════════════════
+         HERO
+    ════════════════════════════════════════════════════════ -->
+    <section id="transformation-hero" class="relative hero-glow section-pad px-4 sm:px-6 overflow-hidden">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-center md:gap-12 lg:gap-16">
+
+          <!-- Copy column -->
+          <div class="flex-1 min-w-0">
+            <div class="dt-eyebrow">
+              <svg width="6" height="6" viewBox="0 0 6 6" fill="currentColor" aria-hidden="true"><circle cx="3" cy="3" r="3"/></svg>
+              Digital Transformation Consulting &middot; For Established Operators
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight mb-5">
+              From Filing Cabinets<br class="hidden sm:block"> to Full Operational<br class="hidden sm:block"> Visibility.
+            </h1>
+            <p class="text-lg text-white/60 max-w-xl mb-4 leading-relaxed">
+              <em>We transition traditional businesses into the modern era — without disrupting the operations that already pay the bills.</em>
+            </p>
+            <p class="text-base text-white/70 max-w-xl mb-9 leading-relaxed">
+              Your business runs on paper trails, personal notebooks, and informal chat threads. It works — but it doesn't <em>scale</em>, doesn't <em>report</em>, and doesn't <em>protect you</em>. Sagsoul installs the digital backbone that turns institutional knowledge into a corporate asset.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 mb-10">
+              <a href="#intake" class="btn-primary-dt">Schedule a Digital Readiness Audit &rarr;</a>
+              <a href="#intake" class="btn-outline-dt">Download the Executive Brief (PDF)</a>
+            </div>
+
+            <!-- Stat strip -->
+            <div class="stat-strip">
+              <div class="stat-strip__item">
+                <span class="stat-strip__value">10 mo.</span>
+                <span class="stat-strip__label">Structured Roadmap</span>
+              </div>
+              <div class="stat-strip__item">
+                <span class="stat-strip__value">100%</span>
+                <span class="stat-strip__label">Operational Continuity</span>
+              </div>
+              <div class="stat-strip__item">
+                <span class="stat-strip__value">5</span>
+                <span class="stat-strip__label">Proven Phases</span>
+              </div>
+              <div class="stat-strip__item">
+                <span class="stat-strip__value">NDA</span>
+                <span class="stat-strip__label">Confidential First</span>
+              </div>
+            </div>
+          </div><!-- /copy column -->
+
+          <!-- Geometric visual (md+ only) -->
+          <div class="hero-visual" aria-hidden="true">
+            <svg width="300" height="250" viewBox="0 0 300 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Subtle dot grid -->
+              <defs>
+                <pattern id="dt-dotgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <circle cx="1" cy="1" r="1" fill="#D3D1C7" opacity="0.55"/>
+                </pattern>
+              </defs>
+              <rect width="300" height="250" fill="url(#dt-dotgrid)"/>
+
+              <!-- Brand-mark echo (large, very muted) -->
+              <rect x="12" y="16" width="56" height="10" rx="2" fill="#0D0D0D" opacity="0.055"/>
+              <rect x="12" y="16" width="10" height="56" rx="2" fill="#0D0D0D" opacity="0.055"/>
+              <rect x="12" y="62" width="56" height="10" rx="2" fill="#0891B2" opacity="0.10"/>
+              <rect x="58" y="62" width="10" height="56" rx="2" fill="#0D0D0D" opacity="0.055"/>
+              <rect x="12" y="108" width="56" height="10" rx="2" fill="#0D0D0D" opacity="0.055"/>
+
+              <!-- Card 1: Performance bars (top-right) -->
+              <rect x="88" y="12" width="196" height="104" rx="12" fill="#FFFFFF" stroke="#D3D1C7" stroke-width="1"/>
+              <!-- label chip -->
+              <rect x="104" y="26" width="56" height="8" rx="4" fill="#E0F2FE"/>
+              <!-- progress bars -->
+              <rect x="104" y="44" width="164" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="104" y="44" width="124" height="8" rx="4" fill="#0891B2"/>
+              <rect x="104" y="60" width="164" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="104" y="60" width="88" height="8" rx="4" fill="#0891B2" opacity="0.6"/>
+              <rect x="104" y="76" width="164" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="104" y="76" width="110" height="8" rx="4" fill="#0891B2" opacity="0.4"/>
+              <rect x="104" y="92" width="164" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="104" y="92" width="66" height="8" rx="4" fill="#0D0D0D" opacity="0.09"/>
+
+              <!-- Card 2: Teal-featured metric card (bottom, offset right) -->
+              <rect x="88" y="132" width="196" height="106" rx="12" fill="#FFFFFF" stroke="#0891B2" stroke-width="1.5"/>
+              <!-- teal header bar -->
+              <rect x="88" y="132" width="196" height="16" rx="10" fill="#0891B2"/>
+              <rect x="88" y="140" width="196" height="8" fill="#0891B2"/>
+              <!-- circular metric -->
+              <circle cx="124" cy="182" r="22" fill="#E0F2FE" stroke="#0891B2" stroke-width="1.5"/>
+              <circle cx="124" cy="182" r="12" fill="#0891B2" opacity="0.28"/>
+              <circle cx="124" cy="182" r="6"  fill="#0891B2"/>
+              <!-- metric detail bars -->
+              <rect x="158" y="167" width="108" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="158" y="167" width="84"  height="8" rx="4" fill="#0D0D0D" opacity="0.07"/>
+              <rect x="158" y="183" width="108" height="8" rx="4" fill="#E0F2FE"/>
+              <rect x="158" y="199" width="108" height="8" rx="4" fill="#F1EFEA"/>
+              <rect x="158" y="199" width="64"  height="8" rx="4" fill="#0D0D0D" opacity="0.07"/>
+
+              <!-- Floating mini-badge -->
+              <rect x="184" y="220" width="80" height="18" rx="9" fill="#E0F2FE" stroke="#0891B2" stroke-width="1"/>
+              <rect x="194" y="226" width="60" height="6" rx="3" fill="#0891B2" opacity="0.45"/>
+
+              <!-- Small connector dot -->
+              <circle cx="76" cy="82" r="5" fill="#0891B2"/>
+              <line x1="76" y1="82" x2="88" y2="82" stroke="#0891B2" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+              <!-- Activity dots row -->
+              <circle cx="20" cy="204" r="4" fill="#0891B2"/>
+              <circle cx="36" cy="204" r="4" fill="#0891B2" opacity="0.5"/>
+              <circle cx="52" cy="204" r="4" fill="#0891B2" opacity="0.2"/>
+            </svg>
+          </div><!-- /hero-visual -->
+
+        </div><!-- /flex row -->
       </div>
     </section>
 
-    <section id="legacy-trap" class="py-24 px-4 sm:px-6 bg-navy-800">
-      <div class="max-w-6xl mx-auto">
-        <p class="text-gold text-sm uppercase tracking-[0.12em] mb-3">The Hidden Cost of "How We've Always Done It"</p>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6">Your business isn't slow because your people are slow. It's slow because your <em>systems</em> are invisible.</h2>
-        <p class="text-white/70 max-w-4xl mb-10 leading-relaxed">Most traditional operators have capable teams and strong customer relationships, but performance still stalls when mission-critical information sits in filing cabinets, branch-specific spreadsheets, and personal chat histories. Leadership cannot improve what leadership cannot see, and visibility gaps quietly become cost, risk, and reputational drag.</p>
 
-        <div class="grid sm:grid-cols-2 gap-6">
-          <article class="card-hover bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-lg mb-3">Revenue Leakage from Un-Institutionalised Data</h3>
-            <p class="text-white/60 text-sm leading-relaxed">When pricing logic, stock movement, customer credit history, and route-level costs live in personal notebooks or isolated files, margin leakage becomes normalised. Your business appears busy, but hidden inefficiencies quietly consume profit every week.</p>
+    <!-- ════════════════════════════════════════════════════════
+         HIDDEN COST — BENTO GRID
+    ════════════════════════════════════════════════════════ -->
+    <section id="legacy-trap" class="section-pad px-4 sm:px-6">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="dt-eyebrow">The Hidden Cost of &ldquo;How We&rsquo;ve Always Done It&rdquo;</div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 max-w-3xl leading-tight">
+          Your business isn&rsquo;t slow because your people are slow.<br class="hidden md:block"> It&rsquo;s slow because your <em>systems</em> are invisible.
+        </h2>
+        <p class="text-white/70 max-w-2xl mb-10 leading-relaxed">
+          Performance stalls when mission-critical information sits in filing cabinets, branch spreadsheets, and personal chat histories. Leadership cannot improve what leadership cannot see — and visibility gaps quietly compound into cost, risk, and reputational drag.
+        </p>
+
+        <div class="bento-grid">
+
+          <!-- Card 1 (wide) -->
+          <article class="bento-card bento-card--wide">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">Revenue Leakage from Un-Institutionalised Data</h3>
+            <p class="bento-card__body">When pricing logic, stock movement, customer credit history, and route-level costs live in personal notebooks or isolated files, margin leakage becomes normalised. Your business appears busy, but hidden inefficiencies quietly consume profit every week.</p>
           </article>
-          <article class="card-hover bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-lg mb-3">Absolute Data Silos Across Branches</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Each branch builds its own operating truth, so management decisions are made from fragmented reports that arrive late and conflict with one another. Expansion, procurement, and capital allocation become guesswork instead of controlled executive decisions.</p>
+
+          <!-- Card 2 (narrow) -->
+          <article class="bento-card">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="7" height="9" rx="1"/><rect x="15" y="3" width="7" height="5" rx="1"/>
+                <rect x="15" y="12" width="7" height="9" rx="1"/><rect x="2" y="16" width="7" height="5" rx="1"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">Absolute Data Silos Across Branches</h3>
+            <p class="bento-card__body">Each branch builds its own operating truth, so management decisions are made from fragmented reports that arrive late and conflict with one another. Expansion and capital allocation become guesswork.</p>
           </article>
-          <article class="card-hover bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-lg mb-3">Untraceable Staff Productivity</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Without structured workflows and auditable handovers, output depends on personalities instead of systems. Accountability weakens, bottlenecks are blamed on "the market," and high-performing teams are forced to carry hidden operational debt.</p>
+
+          <!-- Card 3 (narrow) -->
+          <article class="bento-card">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">Untraceable Staff Productivity</h3>
+            <p class="bento-card__body">Without structured workflows and auditable handovers, output depends on personalities instead of systems. High-performing teams are forced to carry hidden operational debt.</p>
           </article>
-          <article class="card-hover bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-lg mb-3">Compliance &amp; Audit Exposure</h3>
-            <p class="text-white/60 text-sm leading-relaxed">Manual records are vulnerable to loss, inconsistency, and delayed retrieval, creating avoidable legal and regulatory exposure. During audits, institutions scramble for proof that should already be searchable, timestamped, and centrally controlled.</p>
+
+          <!-- Card 4 (wide) -->
+          <article class="bento-card bento-card--wide">
+            <div class="bento-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="bento-card__title">Compliance &amp; Audit Exposure</h3>
+            <p class="bento-card__body">Manual records are vulnerable to loss, inconsistency, and delayed retrieval, creating avoidable legal and regulatory exposure. During audits, institutions scramble for proof that should already be searchable, timestamped, and centrally controlled.</p>
           </article>
+
+        </div><!-- /bento-grid -->
+
+        <div class="quote-callout">
+          Going digital isn&rsquo;t a &ldquo;tech upgrade.&rdquo; It&rsquo;s the difference between owning your business and merely operating it.
         </div>
 
-        <p class="mt-10 text-center italic text-white/70">Going digital isn't a "tech upgrade." It's the difference between owning your business and merely operating it.</p>
       </div>
     </section>
 
-    <section id="pillars" class="py-24 px-4 sm:px-6">
+
+    <!-- ════════════════════════════════════════════════════════
+         THREE PILLARS
+    ════════════════════════════════════════════════════════ -->
+    <section id="pillars" class="section-pad px-4 sm:px-6">
       <div class="max-w-6xl mx-auto">
-        <p class="text-gold text-sm uppercase tracking-[0.12em] mb-3">How We Modernise Without Breaking What Works</p>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6">Three Pillars. Zero Operational Downtime.</h2>
-        <p class="text-white/70 max-w-5xl mb-10 leading-relaxed">We don't switch your business off to switch it on. Our model runs the new digital ecosystem <em>alongside</em> your existing process until the new system is provably faster, cleaner, and trusted by your team. Only then does the paper retire.</p>
 
-        <div class="grid md:grid-cols-3 gap-6">
-          <article class="bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-xl mb-2">Pillar 1: Data Modernisation</h3>
-            <p class="text-gold/80 text-sm font-semibold mb-3">From tribal knowledge to enterprise memory.</p>
-            <p class="text-white/60 text-sm leading-relaxed mb-4">We transition paper records and personal notebooks into secure, structured systems that belong to the company, not individuals. This creates a permanent operational memory layer that scales with growth.</p>
-            <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Paper-to-digital process mapping</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Secure centralised data architecture</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Data ownership and access governance</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Legacy archive digitisation framework</li>
+        <div class="dt-eyebrow">How We Modernise Without Breaking What Works</div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 max-w-2xl leading-tight">Three Pillars. Zero Operational Downtime.</h2>
+        <p class="text-white/70 max-w-2xl mb-10 leading-relaxed">
+          We run the new digital ecosystem <em>alongside</em> your existing process until the new system is provably faster, cleaner, and trusted by your team. Only then does the paper retire.
+        </p>
+
+        <div class="pillar-cards">
+
+          <!-- Pillar 1 -->
+          <article class="pillar-card">
+            <div class="pillar-card__num">01</div>
+            <h3 class="pillar-card__title">Data Modernisation</h3>
+            <p class="pillar-card__subtitle">From tribal knowledge to enterprise memory</p>
+            <p class="pillar-card__body">We transition paper records and personal notebooks into secure, structured systems that belong to the company, not individuals — creating a permanent operational memory layer that scales with growth.</p>
+            <ul class="check-list">
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Paper-to-digital process mapping
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Secure centralised data architecture
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Data ownership and access governance
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Legacy archive digitisation framework
+              </li>
             </ul>
           </article>
 
-          <article class="bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-xl mb-2">Pillar 2: Communication Consolidation</h3>
-            <p class="text-gold/80 text-sm font-semibold mb-3">From scattered messages to accountable collaboration.</p>
-            <p class="text-white/60 text-sm leading-relaxed mb-4">We replace informal, unarchived channels and fragmented inbox chains with structured communication workflows where decisions, approvals, and follow-ups are visible and recoverable.</p>
-            <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Workflow-based communication channels</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Role-based approval protocols</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Branch-to-HQ communication standards</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Audit-ready communication history</li>
+          <!-- Pillar 2 (featured / staggered) -->
+          <article class="pillar-card pillar-card--featured">
+            <div class="pillar-card__num">02</div>
+            <h3 class="pillar-card__title">Communication Consolidation</h3>
+            <p class="pillar-card__subtitle">From scattered messages to accountable collaboration</p>
+            <p class="pillar-card__body">We replace informal, unarchived channels and fragmented inbox chains with structured communication workflows where decisions, approvals, and follow-ups are visible and recoverable.</p>
+            <ul class="check-list">
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Workflow-based communication channels
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Role-based approval protocols
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Branch-to-HQ communication standards
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Audit-ready communication history
+              </li>
             </ul>
           </article>
 
-          <article class="bg-charcoal border border-white/10 rounded-2xl p-7">
-            <h3 class="font-black text-xl mb-2">Pillar 3: KPI &amp; Visibility Frameworks</h3>
-            <p class="text-gold/80 text-sm font-semibold mb-3">From delayed reports to live executive control.</p>
-            <p class="text-white/60 text-sm leading-relaxed mb-4">We build measurable performance architecture so leadership has real-time visibility into operational throughput, margin pressure, team output, and risk exposure.</p>
-            <ul class="space-y-2 text-sm text-white/70">
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Executive dashboard design</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Branch and department KPI scorecards</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Operational alerting and exception tracking</li>
-              <li class="flex items-center gap-3"><svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Board-ready reporting templates</li>
+          <!-- Pillar 3 -->
+          <article class="pillar-card">
+            <div class="pillar-card__num">03</div>
+            <h3 class="pillar-card__title">KPI &amp; Visibility Frameworks</h3>
+            <p class="pillar-card__subtitle">From delayed reports to live executive control</p>
+            <p class="pillar-card__body">We build measurable performance architecture so leadership has real-time visibility into operational throughput, margin pressure, team output, and risk exposure.</p>
+            <ul class="check-list">
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Executive dashboard design
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Branch and department KPI scorecards
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Operational alerting and exception tracking
+              </li>
+              <li>
+                <span class="check-dot">
+                  <svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5l2 2 4-4"/></svg>
+                </span>
+                Board-ready reporting templates
+              </li>
             </ul>
           </article>
-        </div>
+
+        </div><!-- /pillar-cards -->
       </div>
     </section>
 
-    <section id="roadmap" class="py-24 px-4 sm:px-6 bg-navy-800">
+
+    <!-- ════════════════════════════════════════════════════════
+         ROADMAP
+    ════════════════════════════════════════════════════════ -->
+    <section id="roadmap" class="section-pad px-4 sm:px-6">
       <div class="max-w-6xl mx-auto">
-        <p class="text-gold text-sm uppercase tracking-[0.12em] mb-3">The Engagement Path</p>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6">A 5-Phase Roadmap From Paper to Performance.</h2>
-        <p class="text-white/70 max-w-5xl mb-10 leading-relaxed">Every transformation is sequenced to protect continuity while increasing clarity. We move in measured phases, validating adoption and performance at each stage before progressing to the next.</p>
 
-        <div class="roadmap-timeline max-w-4xl">
-          <article class="roadmap-step">
-            <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 1</span>
-            <p class="duration mb-1">Duration: Month 1–2</p>
-            <h4 class="font-bold text-xl">Discovery</h4>
-            <p class="text-white/70 mt-2"><strong>What we do:</strong> Audit legacy workflows, paper bottlenecks, branch dependencies, and reporting blind spots.</p>
-            <p class="text-white/60 mt-2"><strong>What you receive:</strong> A board-level diagnostic report, risk map, and prioritised transformation blueprint.</p>
-          </article>
+        <div class="dt-eyebrow">The Engagement Path</div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 max-w-2xl leading-tight">A 5-Phase Roadmap From Paper to Performance.</h2>
+        <p class="text-white/70 max-w-2xl mb-10 leading-relaxed">
+          Every transformation is sequenced to protect continuity while increasing clarity. We move in measured phases, validating adoption and performance at each stage before progressing to the next.
+        </p>
 
-          <article class="roadmap-step">
-            <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 2</span>
-            <p class="duration mb-1">Duration: Month 3–4</p>
-            <h4 class="font-bold text-xl">Architecture &amp; Build</h4>
-            <p class="text-white/70 mt-2"><strong>What we do:</strong> Design and configure the modern digital ecosystem, data structures, and communication workflows.</p>
-            <p class="text-white/60 mt-2"><strong>What you receive:</strong> A production-ready systems architecture with documented controls and governance rules.</p>
-          </article>
+        <!-- ── HORIZONTAL STEPPER (md+) ── -->
+        <div class="roadmap-horizontal">
+          <div class="roadmap-horizontal__track">
 
-          <article class="roadmap-step">
-            <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 3</span>
-            <p class="duration mb-1">Duration: Month 5–6</p>
-            <h4 class="font-bold text-xl">Controlled Pilot</h4>
-            <p class="text-white/70 mt-2"><strong>What we do:</strong> Launch the new system with a core team, test live operations, and tune for speed, reliability, and adoption.</p>
-            <p class="text-white/60 mt-2"><strong>What you receive:</strong> Pilot performance metrics, issue logs, and validated rollout criteria for full deployment.</p>
-          </article>
+            <div class="roadmap-node">
+              <div class="roadmap-node__circle">1</div>
+              <p class="roadmap-node__phase">Phase 1</p>
+              <h4 class="roadmap-node__title">Discovery</h4>
+              <span class="roadmap-node__chip">Month 1&ndash;2</span>
+              <p class="roadmap-node__do"><strong>What we do</strong>Audit legacy workflows, paper bottlenecks, branch dependencies, and reporting blind spots.</p>
+              <p class="roadmap-node__receive"><strong>What you receive</strong>Board-level diagnostic report, risk map &amp; prioritised transformation blueprint.</p>
+            </div>
 
-          <article class="roadmap-step">
-            <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 4</span>
-            <p class="duration mb-1">Duration: Month 7–9</p>
-            <h4 class="font-bold text-xl">Full Deployment &amp; Training Loops</h4>
-            <p class="text-white/70 mt-2"><strong>What we do:</strong> Execute organisation-wide onboarding, run adoption loops, and formally retire paper pathways.</p>
-            <p class="text-white/60 mt-2"><strong>What you receive:</strong> Trained teams, branch-level adoption reports, and signed migration completion documentation.</p>
-          </article>
+            <div class="roadmap-node">
+              <div class="roadmap-node__circle">2</div>
+              <p class="roadmap-node__phase">Phase 2</p>
+              <h4 class="roadmap-node__title">Architecture &amp; Build</h4>
+              <span class="roadmap-node__chip">Month 3&ndash;4</span>
+              <p class="roadmap-node__do"><strong>What we do</strong>Design and configure the modern digital ecosystem, data structures, and communication workflows.</p>
+              <p class="roadmap-node__receive"><strong>What you receive</strong>Production-ready systems architecture with documented controls and governance rules.</p>
+            </div>
 
-          <article class="roadmap-step">
-            <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 5</span>
-            <p class="duration mb-1">Duration: Month 10+</p>
-            <h4 class="font-bold text-xl">Continuous Optimisation</h4>
-            <p class="text-white/70 mt-2"><strong>What we do:</strong> Optimise workflows, add selective automation, and refine KPI frameworks for strategic scaling.</p>
-            <p class="text-white/60 mt-2"><strong>What you receive:</strong> Continuous performance uplift, executive reporting upgrades, and a resilient improvement cadence.</p>
-          </article>
-        </div>
+            <div class="roadmap-node">
+              <div class="roadmap-node__circle">3</div>
+              <p class="roadmap-node__phase">Phase 3</p>
+              <h4 class="roadmap-node__title">Controlled Pilot</h4>
+              <span class="roadmap-node__chip">Month 5&ndash;6</span>
+              <p class="roadmap-node__do"><strong>What we do</strong>Launch the new system with a core team, test live operations, and tune for speed, reliability, and adoption.</p>
+              <p class="roadmap-node__receive"><strong>What you receive</strong>Pilot performance metrics, issue logs, and validated rollout criteria.</p>
+            </div>
+
+            <div class="roadmap-node">
+              <div class="roadmap-node__circle">4</div>
+              <p class="roadmap-node__phase">Phase 4</p>
+              <h4 class="roadmap-node__title">Full Deployment &amp; Training</h4>
+              <span class="roadmap-node__chip">Month 7&ndash;9</span>
+              <p class="roadmap-node__do"><strong>What we do</strong>Execute organisation-wide onboarding, run adoption loops, and formally retire paper pathways.</p>
+              <p class="roadmap-node__receive"><strong>What you receive</strong>Trained teams, branch-level adoption reports, and signed migration documentation.</p>
+            </div>
+
+            <div class="roadmap-node">
+              <div class="roadmap-node__circle">5</div>
+              <p class="roadmap-node__phase">Phase 5</p>
+              <h4 class="roadmap-node__title">Continuous Optimisation</h4>
+              <span class="roadmap-node__chip">Month 10+</span>
+              <p class="roadmap-node__do"><strong>What we do</strong>Optimise workflows, add selective automation, and refine KPI frameworks for strategic scaling.</p>
+              <p class="roadmap-node__receive"><strong>What you receive</strong>Continuous performance uplift, executive reporting upgrades, and a resilient improvement cadence.</p>
+            </div>
+
+          </div><!-- /track -->
+        </div><!-- /roadmap-horizontal -->
+
+        <!-- ── VERTICAL TIMELINE (mobile fallback) ── -->
+        <div class="roadmap-vertical">
+          <div class="roadmap-timeline max-w-2xl">
+
+            <article class="roadmap-step">
+              <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 1</span>
+              <p class="duration mb-1">Duration: Month 1&ndash;2</p>
+              <h4 class="font-bold text-xl">Discovery</h4>
+              <p class="text-white/70 mt-2"><strong>What we do:</strong> Audit legacy workflows, paper bottlenecks, branch dependencies, and reporting blind spots.</p>
+              <p class="text-white/60 mt-2"><strong>What you receive:</strong> A board-level diagnostic report, risk map, and prioritised transformation blueprint.</p>
+            </article>
+
+            <article class="roadmap-step">
+              <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 2</span>
+              <p class="duration mb-1">Duration: Month 3&ndash;4</p>
+              <h4 class="font-bold text-xl">Architecture &amp; Build</h4>
+              <p class="text-white/70 mt-2"><strong>What we do:</strong> Design and configure the modern digital ecosystem, data structures, and communication workflows.</p>
+              <p class="text-white/60 mt-2"><strong>What you receive:</strong> A production-ready systems architecture with documented controls and governance rules.</p>
+            </article>
+
+            <article class="roadmap-step">
+              <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 3</span>
+              <p class="duration mb-1">Duration: Month 5&ndash;6</p>
+              <h4 class="font-bold text-xl">Controlled Pilot</h4>
+              <p class="text-white/70 mt-2"><strong>What we do:</strong> Launch the new system with a core team, test live operations, and tune for speed, reliability, and adoption.</p>
+              <p class="text-white/60 mt-2"><strong>What you receive:</strong> Pilot performance metrics, issue logs, and validated rollout criteria for full deployment.</p>
+            </article>
+
+            <article class="roadmap-step">
+              <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 4</span>
+              <p class="duration mb-1">Duration: Month 7&ndash;9</p>
+              <h4 class="font-bold text-xl">Full Deployment &amp; Training Loops</h4>
+              <p class="text-white/70 mt-2"><strong>What we do:</strong> Execute organisation-wide onboarding, run adoption loops, and formally retire paper pathways.</p>
+              <p class="text-white/60 mt-2"><strong>What you receive:</strong> Trained teams, branch-level adoption reports, and signed migration completion documentation.</p>
+            </article>
+
+            <article class="roadmap-step">
+              <span class="inline-flex items-center text-xs font-semibold bg-gold/10 border border-gold/30 rounded-full px-3 py-1 mb-3">Phase 5</span>
+              <p class="duration mb-1">Duration: Month 10+</p>
+              <h4 class="font-bold text-xl">Continuous Optimisation</h4>
+              <p class="text-white/70 mt-2"><strong>What we do:</strong> Optimise workflows, add selective automation, and refine KPI frameworks for strategic scaling.</p>
+              <p class="text-white/60 mt-2"><strong>What you receive:</strong> Continuous performance uplift, executive reporting upgrades, and a resilient improvement cadence.</p>
+            </article>
+
+          </div><!-- /roadmap-timeline -->
+        </div><!-- /roadmap-vertical -->
+
       </div>
     </section>
 
-    <section id="engagement" class="py-24 px-4 sm:px-6">
+
+    <!-- ════════════════════════════════════════════════════════
+         ENGAGEMENT MODELS
+    ════════════════════════════════════════════════════════ -->
+    <section id="engagement" class="section-pad px-4 sm:px-6">
       <div class="max-w-6xl mx-auto">
-        <p class="text-gold text-sm uppercase tracking-[0.12em] mb-3">Engagement Models</p>
-        <h2 class="text-3xl sm:text-4xl font-black mb-6">Two Ways to Engage. Both Built for Executive Accountability.</h2>
-        <p class="text-white/70 max-w-5xl mb-10 leading-relaxed">We structure every engagement around fixed deliverables, measurable checkpoints, and clear executive reporting lines. You always know what is being delivered, when it is being delivered, and how success is being measured.</p>
 
-        <div class="grid md:grid-cols-2 gap-6">
-          <article class="bg-navy-700 border border-gold/30 rounded-2xl p-8">
-            <h3 class="font-black text-2xl mb-3">Structured Transformation Project</h3>
-            <p class="text-white/60 text-sm mb-4">10-month fixed-duration programme</p>
-            <ul class="space-y-2 text-sm text-white/70 mb-6">
-              <li>• Full legacy workflow audit and risk mapping</li>
-              <li>• End-to-end digital architecture and implementation</li>
-              <li>• Controlled pilot design and execution</li>
-              <li>• Organisation-wide deployment and training loops</li>
-              <li>• KPI dashboard and executive reporting setup</li>
-              <li>• Governance documentation and sign-off pack</li>
-            </ul>
-            <p class="font-semibold text-gold mb-5">Investment: Fixed-scope proposal after readiness audit</p>
-            <a href="#intake" class="inline-flex bg-gold text-navy font-bold px-6 py-3 rounded-full hover:bg-gold-400 transition-colors">Request Project Scope</a>
+        <div class="dt-eyebrow">Engagement Models</div>
+        <h2 class="text-3xl sm:text-4xl font-black mb-4 max-w-2xl leading-tight">Two Ways to Engage. Both Built for Executive Accountability.</h2>
+        <p class="text-white/70 max-w-2xl mb-10 leading-relaxed">
+          We structure every engagement around fixed deliverables, measurable checkpoints, and clear executive reporting lines. You always know what is being delivered, when, and how success is measured.
+        </p>
+
+        <div class="engagement-cards">
+
+          <!-- Card 1: Core Engagement (featured) -->
+          <article class="engagement-card engagement-card--featured">
+            <div class="engagement-card__header">
+              <div class="engagement-card__label">Core Engagement</div>
+              <h3 class="engagement-card__title">Structured Transformation Project</h3>
+              <p class="engagement-card__summary">10-month fixed-duration programme</p>
+            </div>
+            <div class="engagement-card__features">
+              <ul class="feature-list">
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Full legacy workflow audit and risk mapping
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  End-to-end digital architecture and implementation
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Controlled pilot design and execution
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Organisation-wide deployment and training loops
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  KPI dashboard and executive reporting setup
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Governance documentation and sign-off pack
+                </li>
+              </ul>
+            </div>
+            <div class="engagement-card__price">
+              Investment: Fixed-scope proposal after readiness audit
+            </div>
+            <div class="engagement-card__footer">
+              <a href="#intake" class="btn-primary-dt">Request Project Scope</a>
+            </div>
           </article>
 
-          <article class="bg-charcoal border border-white/10 rounded-2xl p-8">
-            <h3 class="font-black text-2xl mb-3">Post-Implementation Advisory &amp; Maintenance (Optional)</h3>
-            <p class="text-white/60 text-sm mb-4">Month-to-month · 6-month minimum</p>
-            <ul class="space-y-2 text-sm text-white/70 mb-6">
-              <li>• Adoption reinforcement and executive coaching</li>
-              <li>• Minor workflow refinements and process tuning</li>
-              <li>• KPI calibration and dashboard evolution</li>
-              <li>• Quarterly branch performance diagnostics</li>
-              <li>• Priority advisory for emerging operational risks</li>
-              <li>• Continuous optimisation planning cadence</li>
-            </ul>
-            <p class="font-semibold text-gold mb-5">Investment: Scoped monthly advisory layer</p>
-            <a href="#intake" class="inline-flex bg-gold text-navy font-bold px-6 py-3 rounded-full hover:bg-gold-400 transition-colors">Add Advisory Layer</a>
+          <!-- Card 2: Optional Add-on -->
+          <article class="engagement-card">
+            <div class="engagement-card__header">
+              <div class="engagement-card__label">Optional Add-on</div>
+              <h3 class="engagement-card__title">Post-Implementation Advisory &amp; Maintenance</h3>
+              <p class="engagement-card__summary">Month-to-month &middot; 6-month minimum</p>
+            </div>
+            <div class="engagement-card__features">
+              <ul class="feature-list">
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Adoption reinforcement and executive coaching
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Minor workflow refinements and process tuning
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  KPI calibration and dashboard evolution
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Quarterly branch performance diagnostics
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Priority advisory for emerging operational risks
+                </li>
+                <li>
+                  <span class="feature-list__check">
+                    <svg viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 7.5l3.5 3.5 6.5-6.5"/></svg>
+                  </span>
+                  Continuous optimisation planning cadence
+                </li>
+              </ul>
+            </div>
+            <div class="engagement-card__price">
+              Investment: Scoped monthly advisory layer
+            </div>
+            <div class="engagement-card__footer">
+              <a href="#intake" class="btn-primary-dt">Add Advisory Layer</a>
+            </div>
           </article>
+
+        </div><!-- /engagement-cards -->
+
+        <div class="guarantee-block">
+          Every engagement begins with an NDA. Every proposal is fixed-scope. Every deliverable is signed off in writing. No open-ended retainers, no surprise invoices, no ambiguity.
         </div>
 
-        <p class="mt-10 text-center italic text-white/70 bg-white/5 border border-white/10 rounded-xl p-4">Every engagement begins with an NDA. Every proposal is fixed-scope. Every deliverable is signed off in writing. No open-ended retainers, no surprise invoices, no ambiguity.</p>
       </div>
     </section>
 
-    <section id="intake" class="py-24 px-4 sm:px-6 bg-navy-800">
+
+    <!-- ════════════════════════════════════════════════════════
+         INTAKE FORM
+    ════════════════════════════════════════════════════════ -->
+    <section id="intake" class="section-pad px-4 sm:px-6">
       <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
+
+          <!-- Left: info panel -->
           <div>
-            <p class="text-gold text-sm uppercase tracking-[0.12em] mb-3">Begin the Conversation</p>
-            <h2 class="text-3xl sm:text-4xl font-black mb-6">Your Operations Already Run. We Make Them Visible, Defensible, and Scalable.</h2>
-            <p class="text-white/70 leading-relaxed mb-4">The Digital Readiness Audit establishes your current-state risk profile, modernisation priorities, and practical transition sequence. We begin with a mutual NDA so your operational context is handled with the confidentiality expected at executive level.</p>
-            <p class="italic text-white/60">Executive intake is reviewed directly by senior consulting leadership.</p>
-          </div>
+            <div class="dt-eyebrow">Begin the Conversation</div>
+            <h2 class="text-3xl sm:text-4xl font-black mb-5 max-w-sm leading-tight">
+              Your Operations Already Run. We Make Them Visible, Defensible, and Scalable.
+            </h2>
+            <p class="text-white/70 leading-relaxed mb-4">
+              The Digital Readiness Audit establishes your current-state risk profile, modernisation priorities, and practical transition sequence. We begin with a mutual NDA so your operational context is handled with the confidentiality expected at executive level.
+            </p>
+            <p class="italic text-white/60 text-sm mb-8">Executive intake is reviewed directly by senior consulting leadership.</p>
 
+            <!-- What happens next -->
+            <p class="text-sm font-700 font-bold uppercase tracking-widest text-white/70 mb-1" style="letter-spacing:0.1em;">What happens next</p>
+            <ul class="intake-steps">
+              <li class="intake-steps__item">
+                <span class="intake-steps__num">1</span>
+                <div class="intake-steps__text">
+                  <strong>NDA executed</strong>
+                  A mutual non-disclosure agreement is signed before any operational detail is discussed.
+                </div>
+              </li>
+              <li class="intake-steps__item">
+                <span class="intake-steps__num">2</span>
+                <div class="intake-steps__text">
+                  <strong>Discovery call</strong>
+                  A senior consultant reviews your submission and schedules a structured intake call within one business day.
+                </div>
+              </li>
+              <li class="intake-steps__item">
+                <span class="intake-steps__num">3</span>
+                <div class="intake-steps__text">
+                  <strong>Readiness audit scoped</strong>
+                  We produce a fixed-scope proposal for the Digital Readiness Audit — your first, commitment-free step.
+                </div>
+              </li>
+            </ul>
+          </div><!-- /left -->
+
+          <!-- Right: form -->
           <div class="bg-charcoal border border-white/10 rounded-2xl p-8">
             <form action="mailto:hello@sagsoul.net" method="post" enctype="text/plain" aria-label="Confidential digital transformation enquiry form">
-              <div class="grid gap-4">
-                <div>
-                  <label for="full-name">Full Name *</label>
-                  <input id="full-name" name="Full Name" type="text" required />
+
+              <!-- Group: Personal -->
+              <div class="field-group">
+                <p class="field-group__label">Personal</p>
+                <div class="field-row field-row--2col">
+                  <div>
+                    <label for="full-name">Full Name *</label>
+                    <input id="full-name" name="Full Name" type="text" required />
+                  </div>
+                  <div>
+                    <label for="position">Position / Title *</label>
+                    <input id="position" name="Position / Title" type="text" required />
+                  </div>
                 </div>
-                <div>
-                  <label for="position">Position / Title *</label>
-                  <input id="position" name="Position / Title" type="text" required />
+              </div>
+
+              <!-- Group: Organisation -->
+              <div class="field-group">
+                <p class="field-group__label">Organisation</p>
+                <div class="field-row field-row--2col">
+                  <div>
+                    <label for="organisation">Organisation *</label>
+                    <input id="organisation" name="Organisation" type="text" required />
+                  </div>
+                  <div>
+                    <label for="industry">Industry</label>
+                    <select id="industry" name="Industry">
+                      <option>Logistics</option>
+                      <option>Manufacturing</option>
+                      <option>Retail Group</option>
+                      <option>Hospitality</option>
+                      <option>Agriculture</option>
+                      <option>Financial Services</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
                 </div>
-                <div>
-                  <label for="organisation">Organisation *</label>
-                  <input id="organisation" name="Organisation" type="text" required />
+                <div class="field-row field-row--2col">
+                  <div>
+                    <label for="turnover">Annual Turnover</label>
+                    <select id="turnover" name="Annual Turnover">
+                      <option>Under $500k</option>
+                      <option>$500k&ndash;$2M</option>
+                      <option>$2M&ndash;$10M</option>
+                      <option>$10M+</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="branches">Number of Branches / Sites</label>
+                    <input id="branches" name="Number of Branches / Sites" type="number" />
+                  </div>
                 </div>
-                <div>
-                  <label for="industry">Industry</label>
-                  <select id="industry" name="Industry">
-                    <option>Logistics</option>
-                    <option>Manufacturing</option>
-                    <option>Retail Group</option>
-                    <option>Hospitality</option>
-                    <option>Agriculture</option>
-                    <option>Financial Services</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="turnover">Annual Turnover</label>
-                  <select id="turnover" name="Annual Turnover">
-                    <option>Under $500k</option>
-                    <option>$500k–$2M</option>
-                    <option>$2M–$10M</option>
-                    <option>$10M+</option>
-                  </select>
-                </div>
-                <div>
-                  <label for="branches">Number of Branches / Sites</label>
-                  <input id="branches" name="Number of Branches / Sites" type="number" />
-                </div>
-                <div>
+              </div>
+
+              <!-- Group: Engagement -->
+              <div class="field-group">
+                <p class="field-group__label">Engagement</p>
+                <div class="field-single">
                   <label for="contact-method">Preferred Contact</label>
                   <select id="contact-method" name="Preferred Contact">
                     <option>Email</option>
@@ -323,26 +737,36 @@
                     <option>Scheduled Call</option>
                   </select>
                 </div>
-                <div>
+                <div class="field-single">
                   <label for="bottlenecks">Brief Description of Current Paper-Based Bottlenecks</label>
                   <textarea id="bottlenecks" name="Current Bottlenecks" rows="4" aria-label="Confidential bottlenecks description"></textarea>
                 </div>
-                <label class="form-confidentiality" for="nda-confirmation">
-                  <input id="nda-confirmation" name="NDA Confirmation" type="checkbox" required />
-                  <span>I confirm this enquiry will be handled under mutual NDA.</span>
-                </label>
-                <button type="submit" class="bg-gold text-navy font-bold px-6 py-3 rounded-full hover:bg-gold-400 transition-colors">
-                  Submit Confidential Enquiry →
-                </button>
               </div>
-            </form>
-            <p class="mt-4 text-sm text-white/60">🔒 <em>Submissions are encrypted in transit and reviewed only by senior consulting staff. We respond within one business day. Mutual NDA executed before any operational detail is discussed.</em></p>
-          </div>
-        </div>
 
-        <p class="mt-10 text-center italic text-white/70">Sagsoul Holdings — Transitioning Zimbabwe's traditional operators into the technological era, with confidentiality, structure, and proof.</p>
+              <!-- NDA confirmation -->
+              <label class="form-confidentiality" for="nda-confirmation" style="margin-bottom:16px;display:flex;">
+                <input id="nda-confirmation" name="NDA Confirmation" type="checkbox" required />
+                <span>I confirm this enquiry will be handled under mutual NDA.</span>
+              </label>
+
+              <!-- Submit -->
+              <button type="submit" class="btn-submit-dt">
+                Submit Confidential Enquiry
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+              </button>
+
+            </form>
+            <p class="mt-5 text-sm text-white/60">&#128274; <em>Submissions are encrypted in transit and reviewed only by senior consulting staff. We respond within one business day. Mutual NDA executed before any operational detail is discussed.</em></p>
+          </div><!-- /form card -->
+
+        </div><!-- /grid -->
+
+        <p class="mt-10 text-center italic text-white/70">
+          Sagsoul Holdings &mdash; Transitioning Zimbabwe&rsquo;s traditional operators into the technological era, with confidentiality, structure, and proof.
+        </p>
       </div>
     </section>
+
   </main>
 
   <footer class="py-12 px-4 sm:px-6 border-t border-white/5">
