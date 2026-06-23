@@ -1,86 +1,76 @@
 /* ============================================================
-   SAGSOUL — EXECUTIVE LIGHT MODE THEME
+   SAGSOUL — BRAND-ALIGNED LIGHT MODE THEME
+   Aligned to Sagsoul Holdings Brand Guidelines v1.0
    Drop-in override. Load AFTER styles.css.
-   Token names preserved for backwards-compatibility.
    ============================================================ */
 
 :root {
+  /* ---------- BRAND CORE ---------- */
+  --brand-black:   #0D0D0D;
+  --brand-white:   #F5F3EE;   /* warm white */
+  --brand-teal:    #0891B2;   /* electric teal */
+  --brand-teal-dk: #0E7490;
+  --brand-teal-tint:#E0F2FE;
+
+  /* ---------- NEUTRAL SCALE (warm) ---------- */
+  --n50:   #F8F7F5;
+  --n100:  #F1EFEA;
+  --n200:  #D3D1C7;
+  --n400:  #B4B2A9;
+  --n600:  #888780;
+  --n800:  #444441;
+  --n900:  #2C2C2A;
+
   /* ---------- SURFACES ---------- */
-  --bg-base:        #F7F8FA;
-  --bg-elevated:    #FFFFFF;
-  --bg-subtle:      #EEF1F5;
-  --bg-muted:       #E4E8EE;
-  --bg-inverse:     #0F172A;
+  --bg-base:       var(--n50);       /* page background */
+  --bg-elevated:   #FFFFFF;          /* cards */
+  --bg-subtle:     var(--n100);      /* alternating section */
+  --bg-muted:      #EBE8E1;          /* code, disabled */
+  --bg-inverse:    var(--brand-black); /* footer / dark island */
 
-  /* ---------- TYPOGRAPHY ---------- */
-  --text-primary:   #0F172A;
-  --text-body:      #1E293B;
-  --text-secondary: #475569;
-  --text-muted:     #64748B;
-  --text-disabled:  #94A3B8;
-  --text-on-accent: #FFFFFF;
-
-  /* ---------- PRIMARY (Executive Navy) ---------- */
-  --primary-900:    #0B2545;
-  --primary-800:    #13315C;
-  --primary-700:    #1B3B6F;
-  --primary-600:    #2E5A9C;
-  --primary-500:    #4A7BC4;
-  --primary-100:    #E5EEFB;
-  --primary-50:     #F1F6FD;
-
-  /* ---------- SECONDARY (Executive Emerald) ---------- */
-  --accent-emerald:      #0F766E;
-  --accent-emerald-soft: #E6F4F1;
-
-  /* ---------- SEMANTIC ---------- */
-  --success:        #15803D;
-  --warning:        #B45309;
-  --danger:         #B91C1C;
-  --info:           #1D4ED8;
+  /* ---------- TYPOGRAPHY COLORS ---------- */
+  --text-primary:   var(--brand-black);
+  --text-body:      var(--n900);
+  --text-secondary: var(--n800);
+  --text-muted:     var(--n600);
+  --text-disabled:  var(--n400);
+  --text-on-dark:   var(--brand-white);
+  --text-on-teal:   #FFFFFF;
 
   /* ---------- LINES ---------- */
-  --border-default: #E2E8F0;
-  --border-strong:  #CBD5E1;
-  --border-focus:   #2E5A9C;
+  --border-default: var(--n200);
+  --border-strong:  #C8C6BE;
+  --border-focus:   var(--brand-teal);
 
-  /* ---------- SHADOWS (cool slate, layered) ---------- */
+  /* ---------- SHADOWS (warm slate, layered) ---------- */
   --shadow-sm:
-    0 1px 2px 0 rgba(15, 23, 42, 0.04),
-    0 1px 1px 0 rgba(15, 23, 42, 0.03);
+    0 1px 2px 0 rgba(13,13,13,0.04),
+    0 1px 1px 0 rgba(13,13,13,0.03);
   --shadow-md:
-    0 4px 6px -2px rgba(15, 23, 42, 0.05),
-    0 2px 4px -2px rgba(15, 23, 42, 0.04);
+    0 4px 6px -2px rgba(13,13,13,0.05),
+    0 2px 4px -2px rgba(13,13,13,0.04);
   --shadow-lg:
-    0 12px 24px -8px rgba(15, 23, 42, 0.10),
-    0 4px 8px -4px rgba(15, 23, 42, 0.06);
+    0 12px 24px -8px rgba(13,13,13,0.10),
+    0 4px 8px -4px rgba(13,13,13,0.06);
   --shadow-card-hover:
-    0 0 0 1px rgba(46, 90, 156, 0.18),
-    0 16px 32px -12px rgba(15, 23, 42, 0.12),
-    0 4px 8px -4px rgba(15, 23, 42, 0.06);
+    0 0 0 1px rgba(8,145,178,0.25),
+    0 16px 32px -12px rgba(13,13,13,0.10),
+    0 4px 8px -4px rgba(13,13,13,0.06);
   --shadow-focus-ring:
-    0 0 0 3px rgba(46, 90, 156, 0.25);
+    0 0 0 3px rgba(8,145,178,0.30);
 
-  /* ---------- LEGACY TOKEN OVERRIDES ---------- */
-  --black:          var(--text-primary);
-  --white:          var(--bg-base);
-  --accent:         var(--primary-800);
-  --accent-dark:    var(--primary-900);
+  /* ---------- LEGACY TOKEN OVERRIDES (keep utilities working) ---------- */
+  --black:         var(--text-primary);
+  --white:         var(--bg-base);
+  --accent:        var(--brand-teal);
+  --accent-dark:   var(--brand-teal-dk);
 
-  --n50:            #F7F8FA;
-  --n100:           #EEF1F5;
-  --n200:           #E2E8F0;
-  --n400:           #94A3B8;
-  --n600:           #475569;
-  --n800:           #1E293B;
-  --n900:           #0F172A;
-
-  /* Tailwind theme tokens — remapped to light palette */
+  /* Tailwind theme tokens — remapped to brand light palette */
   --color-navy:     var(--bg-base);
   --color-navy-800: var(--bg-subtle);
   --color-navy-700: var(--bg-elevated);
-  --color-gold:     var(--primary-800);
-  --color-gold-400: var(--primary-700);
+  --color-gold:     var(--brand-teal);
+  --color-gold-400: var(--brand-teal-dk);
   --color-charcoal: var(--bg-elevated);
 }
 
@@ -88,8 +78,8 @@
    BASE
    ============================================================ */
 html, body {
-  background-color: var(--bg-base);
-  color: var(--text-body);
+  background-color: var(--bg-base) !important;
+  color: var(--text-body) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,116 +89,171 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-primary) !important;
   letter-spacing: -0.015em;
 }
-h1 { color: var(--text-primary) !important; }
 p { color: var(--text-body); }
 
-.text-navy        { color: var(--text-primary) !important; }
+/* ----- White-on-dark utility remaps (most important for fixing the cards) ----- */
 .text-white       { color: var(--text-primary) !important; }
+.text-white\/90,
+.text-white\/80,
 .text-white\/70   { color: var(--text-body) !important; }
 .text-white\/60   { color: var(--text-secondary) !important; }
 .text-white\/50   { color: var(--text-muted) !important; }
 .text-white\/40   { color: var(--text-muted) !important; }
-.text-white\/30   { color: var(--text-disabled) !important; }
+.text-white\/30,
 .text-white\/20   { color: var(--text-disabled) !important; }
 
+.text-navy { color: var(--text-primary) !important; }
+
+/* The "gold gradient" headline highlight = brand teal */
 .text-gold-gradient {
-  color: var(--primary-800);
-  background: none;
-  -webkit-text-fill-color: var(--primary-800);
+  color: var(--brand-teal) !important;
+  background: none !important;
+  -webkit-text-fill-color: var(--brand-teal) !important;
 }
 
 /* ============================================================
    SURFACES & CARDS
    ============================================================ */
-[class*="bg-charcoal"], .bg-charcoal {
+
+/* Force cards to be white-on-light regardless of class combinations */
+.bg-charcoal,
+[class*="bg-charcoal"] {
   background-color: var(--bg-elevated) !important;
   border-color: var(--border-default) !important;
   box-shadow: var(--shadow-sm);
+  color: var(--text-body) !important;
 }
-[class*="bg-navy-800"], .bg-navy-800 {
+
+/* Alternating section bands */
+.bg-navy-800,
+[class*="bg-navy-800"] {
   background-color: var(--bg-subtle) !important;
+  color: var(--text-body) !important;
 }
-[class*="bg-navy-700"], .bg-navy-700 {
+
+/* Highlighted card (e.g., "Most Popular" pricing, "Our Promise" advantage) */
+.bg-navy-700,
+[class*="bg-navy-700"] {
   background-color: var(--bg-elevated) !important;
-  border-color: var(--primary-600) !important;
+  border-color: var(--brand-teal) !important;
   box-shadow: var(--shadow-lg);
+  color: var(--text-body) !important;
 }
+
+/* Page bg */
 .bg-navy { background-color: var(--bg-base) !important; }
 
+/* Generic body wrapper that had bg-navy and text-white classes */
+body.bg-navy.text-white { background-color: var(--bg-base) !important; color: var(--text-body) !important; }
+
+/* Borders */
 .border-white\/10,
 .border-white\/5 { border-color: var(--border-default) !important; }
 .border-white\/20 { border-color: var(--border-strong) !important; }
 
+/* Subtle white overlays → warm neutral tints */
 .bg-white\/5  { background-color: var(--bg-subtle) !important; }
 .bg-white\/10 { background-color: var(--bg-muted) !important; }
 
+/* Card hover */
 .card-hover {
   transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
 }
 .card-hover:hover {
   box-shadow: var(--shadow-card-hover);
-  border-color: var(--primary-500) !important;
+  border-color: var(--brand-teal) !important;
   transform: translateY(-3px);
 }
 
 /* ============================================================
    NAVIGATION
    ============================================================ */
-header.fixed {
-  background-color: rgba(247, 248, 250, 0.85) !important;
+header.fixed,
+header.fixed.bg-navy\/80 {
+  background-color: rgba(248, 247, 245, 0.88) !important;
   border-bottom: 1px solid var(--border-default) !important;
   backdrop-filter: saturate(180%) blur(12px);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
 }
 header nav a,
 header .text-white\/70 { color: var(--text-secondary) !important; }
-header nav a:hover { color: var(--primary-800) !important; }
+header nav a:hover { color: var(--brand-teal) !important; }
+
+/* Mobile drawer */
+header .bg-navy { background-color: var(--bg-base) !important; }
+header .border-white\/5 { border-color: var(--border-default) !important; }
 
 /* ============================================================
-   BUTTONS
+   BUTTONS — primary CTA = brand teal
    ============================================================ */
 .bg-gold {
-  background-color: var(--primary-800) !important;
-  color: var(--text-on-accent) !important;
+  background-color: var(--brand-teal) !important;
+  color: var(--text-on-teal) !important;
 }
 .bg-gold:hover,
 .hover\:bg-gold-400:hover {
-  background-color: var(--primary-700) !important;
+  background-color: var(--brand-teal-dk) !important;
 }
-.text-gold { color: var(--primary-800) !important; }
 
-.border.border-white\/20 {
-  border-color: var(--border-strong) !important;
-  color: var(--text-primary) !important;
-}
-.border.border-white\/20:hover { background-color: var(--primary-50) !important; }
-
+/* Solid teal pill — "Talk to a Human", primary CTAs */
 a.bg-gold.text-navy {
-  background-color: var(--primary-800) !important;
-  color: var(--text-on-accent) !important;
+  background-color: var(--brand-teal) !important;
+  color: var(--text-on-teal) !important;
   box-shadow: var(--shadow-sm);
 }
-a.bg-gold.text-navy:hover { background-color: var(--primary-700) !important; }
+a.bg-gold.text-navy:hover { background-color: var(--brand-teal-dk) !important; }
 
-.bg-gold\/10  { background-color: var(--primary-100) !important; }
-.bg-gold\/15  { background-color: var(--primary-100) !important; }
-.bg-gold\/20  { background-color: var(--primary-100) !important; }
+/* Text link/eyebrow teal */
+.text-gold        { color: var(--brand-teal) !important; }
+.text-gold\/70,
+.text-gold\/80    { color: var(--brand-teal-dk) !important; }
+
+/* Outline / ghost buttons */
+.border.border-white\/20 {
+  border-color: var(--brand-black) !important;
+  color: var(--text-primary) !important;
+}
+.border.border-white\/20:hover {
+  background-color: var(--brand-black) !important;
+  color: var(--brand-white) !important;
+}
+
+/* Teal-tinted decorations */
+.bg-gold\/10,
+.bg-gold\/15,
+.bg-gold\/20      { background-color: var(--brand-teal-tint) !important; }
 .border-gold\/20,
 .border-gold\/25,
 .border-gold\/30,
-.border-gold\/40 { border-color: var(--primary-500) !important; }
-.text-gold\/70,
-.text-gold\/80  { color: var(--primary-700) !important; }
+.border-gold\/40  { border-color: var(--brand-teal) !important; }
 .shadow-gold\/10,
-.shadow-gold\/20 { box-shadow: var(--shadow-md) !important; }
+.shadow-gold\/20  { box-shadow: var(--shadow-md) !important; }
 
-.hero-glow {
-  background:
-    radial-gradient(ellipse 70% 60% at 20% 80%, rgba(46, 90, 156, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(15, 23, 42, 0.03) 0%, transparent 55%),
-    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(46, 90, 156, 0.08) 0%, transparent 70%);
+/* "Our Promise" / "Most Popular" badge — keep teal pill with white text */
+.bg-gold.text-navy.px-2,
+.bg-gold.text-navy.px-3 {
+  background-color: var(--brand-teal) !important;
+  color: var(--text-on-teal) !important;
 }
 
+/* Gradient accent bar inside highlighted cards */
+.bg-gradient-to-r.from-gold\/60,
+.from-gold\/60 { --tw-gradient-from: var(--brand-teal-dk) !important; }
+.via-gold      { --tw-gradient-via: var(--brand-teal) !important; }
+.to-gold\/60   { --tw-gradient-to: var(--brand-teal-dk) !important; }
+
+/* Hero radial glow — soft teal on warm white */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 80%, rgba(8,145,178,0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(13,13,13,0.02) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(8,145,178,0.10) 0%, transparent 70%) !important;
+}
+
+/* CTA section soft glow */
+.bg-gold\/10.blur-3xl { background-color: rgba(8,145,178,0.15) !important; }
+
+/* Decorative hero rings */
 .border-white\/5 { border-color: var(--border-default) !important; }
 
 /* ============================================================
@@ -244,12 +289,16 @@ label {
 }
 .form-confidentiality {
   display: flex; align-items: flex-start; gap: 10px;
-  background: var(--accent-emerald-soft);
-  border: 1px solid var(--accent-emerald);
+  background: var(--brand-teal-tint);
+  border: 1px solid var(--brand-teal);
   border-radius: 10px;
   padding: 12px 14px;
-  color: var(--accent-emerald);
+  color: var(--brand-teal-dk);
   font-size: 13px;
+}
+.form-confidentiality input[type="checkbox"] {
+  width: auto;
+  margin-top: 2px;
 }
 
 /* ============================================================
@@ -268,8 +317,8 @@ pre {
   box-shadow: var(--shadow-sm);
 }
 :not(pre) > code {
-  background-color: var(--primary-100);
-  color: var(--primary-900);
+  background-color: var(--brand-teal-tint);
+  color: var(--brand-teal-dk);
   padding: 2px 6px;
   border-radius: 5px;
   font-size: 0.9em;
@@ -309,25 +358,33 @@ tbody tr:nth-child(even) { background: var(--bg-subtle); }
   content: ""; position: absolute; left: -28px; top: 4px;
   width: 14px; height: 14px; border-radius: 50%;
   background: var(--bg-elevated);
-  border: 2px solid var(--primary-800);
+  border: 2px solid var(--brand-teal);
   box-shadow: var(--shadow-focus-ring);
 }
-.roadmap-step h4 { color: var(--primary-900); margin: 0 0 4px; }
-.roadmap-step .duration { color: var(--primary-700); font-size: 13px; font-weight: 600; }
+.roadmap-step h4 { color: var(--brand-black); margin: 0 0 4px; }
+.roadmap-step .duration { color: var(--brand-teal-dk); font-size: 13px; font-weight: 600; }
 
 /* ============================================================
-   FOOTER (kept dark as deliberate contrast island)
+   FOOTER — kept as deliberate dark contrast island (per brand guide)
    ============================================================ */
-footer {
-  background-color: var(--bg-inverse);
-  color: rgba(255, 255, 255, 0.7);
+footer,
+footer.border-t {
+  background-color: var(--bg-inverse) !important;
+  color: rgba(245, 243, 238, 0.75) !important;
   border-top: 0 !important;
 }
-footer a { color: rgba(255, 255, 255, 0.7); }
-footer a:hover { color: var(--primary-500); }
+footer a { color: rgba(245, 243, 238, 0.7) !important; }
+footer a:hover { color: var(--brand-teal) !important; }
 footer .text-white\/30,
 footer .text-white\/20,
-footer .text-white\/40 { color: rgba(255, 255, 255, 0.55) !important; }
+footer .text-white\/40 { color: rgba(245, 243, 238, 0.55) !important; }
+footer .border-white\/5 { border-color: rgba(245, 243, 238, 0.08) !important; }
+
+/* Footer wordmark must stay readable on dark */
+footer [style*="color:var(--white)"],
+footer [style*="color: var(--white)"] { color: var(--brand-white) !important; }
+footer [style*="color:var(--n600)"],
+footer [style*="color: var(--n600)"] { color: var(--n400) !important; }
 
 /* ============================================================
    ACCESSIBILITY
