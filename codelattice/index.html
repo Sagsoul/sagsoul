@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codelattice — Advisory, Agriculture, Property, Technology</title>
-  <meta name="description" content="Codelattice operates across business advisory, agriculture, property, and technology with disciplined, practical execution for the Zimbabwean market." />
+  <title>Codelattice — Property, Agriculture, Advisory, Technology</title>
+  <meta name="description" content="Codelattice drives residential property returns, practical agriculture operations, and advisory-led tech modernization for established Zimbabwean businesses." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <style>
     :root{
       --charcoal:#1F2933;
@@ -27,70 +27,88 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{background:var(--charcoal);color:var(--ivory);font-family:'Inter',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
     a{text-decoration:none;color:inherit}
-    .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
     section{padding:84px 0}
     h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em}
 
     .topbar{position:sticky;top:0;z-index:30;background:rgba(31,41,51,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
     .topbar-inner{height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{display:flex;align-items:center;gap:10px}
-    .brand-mark{width:24px;height:24px;border-radius:6px;background:var(--ember);display:grid;place-items:center;font-size:14px;color:var(--ivory)}
+    .brand-logo{width:24px;height:24px;color:var(--ember-soft)}
     .brand-wordmark{font-family:'Fraunces',serif;font-size:16px;letter-spacing:.02em}
     .menu{display:flex;gap:18px;list-style:none;color:rgba(245,242,236,.74);font-size:14px}
     .menu a:hover{color:var(--ivory)}
 
-    .hero{padding:106px 0 92px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 0%, rgba(224,138,79,.15), transparent 35%),var(--charcoal)}
-    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:30px;align-items:center}
+    .hero{padding:94px 0 82px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 0%, rgba(224,138,79,.15), transparent 35%),var(--charcoal)}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
     .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember-soft);margin-bottom:14px;display:block}
-    .hero h1{font-size:54px;line-height:1.03;max-width:740px}
+    .hero h1{font-size:52px;line-height:1.03;max-width:760px}
     .hero h1 span{color:var(--ember-soft)}
-    .lede{margin-top:18px;font-size:18px;color:rgba(245,242,236,.74);max-width:620px}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .lede{margin-top:16px;font-size:18px;color:rgba(245,242,236,.78);max-width:640px}
+    .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 
-    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:600;font-size:14px;transition:.2s ease;min-width:160px}
-    .btn-primary{background:var(--ember);color:var(--ivory)}
-    .btn-primary:hover{background:var(--ember-soft)}
-    .btn-ghost{border:1px solid var(--line);color:var(--ivory)}
-    .btn-ghost:hover{border-color:rgba(245,242,236,.35)}
-    .btn-whatsapp{background:var(--wa);border:1px solid var(--wa);color:#fff;font-weight:700}
-    .btn-whatsapp:hover{background:var(--wa-dark);border-color:var(--wa-dark)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:700;font-size:14px;transition:.2s ease;min-width:150px}
+    .btn-primary{background:var(--wa);border:1px solid var(--wa);color:#fff}
+    .btn-primary:hover{background:var(--wa-dark);border-color:var(--wa-dark)}
+    .btn-secondary{background:var(--ember);border:1px solid var(--ember);color:var(--ivory)}
+    .btn-secondary:hover{background:var(--ember-soft);border-color:var(--ember-soft)}
+    .btn-ghost{border:1px solid var(--line);color:var(--ivory);font-weight:600}
 
     .hero-panel{border:1px solid var(--line);border-radius:14px;background:var(--charcoal-2);padding:22px}
-    .mini-kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .panel-logo{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+    .panel-logo img{width:28px;height:28px;color:var(--ember-soft)}
+    .mini-kpis{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .kpi{border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(0,0,0,.08)}
-    .kpi .v{font-family:'Fraunces',serif;font-size:26px;color:var(--ember-soft)}
+    .kpi .v{font-family:'Fraunces',serif;font-size:23px;color:var(--ember-soft)}
     .kpi .l{font-size:12px;color:rgba(245,242,236,.62)}
 
-    .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px;gap:12px;flex-wrap:wrap}
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:30px;gap:12px;flex-wrap:wrap}
     .section-head h2{font-size:34px}
     .sec-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(245,242,236,.42)}
 
-    .div-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .div-card{border-radius:10px;padding:28px;border:1px solid var(--line);transition:transform .2s ease,border-color .2s ease}
+    .div-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .div-card{border-radius:10px;padding:24px;border:1px solid var(--line);transition:transform .2s ease,border-color .2s ease}
     .div-card:hover{transform:translateY(-2px);border-color:rgba(224,138,79,.55)}
     .div-tag{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.9}
-    .div-card h3{font-size:24px;margin:10px 0 8px}
-    .div-card p{font-size:14px;color:rgba(245,242,236,.72);max-width:360px}
+    .div-card h3{font-size:23px;margin:10px 0 8px}
+    .div-card p{font-size:14px;color:rgba(245,242,236,.72);max-width:370px}
     .div-tech{background:linear-gradient(135deg,var(--charcoal-2),var(--tech) 220%)}
     .div-advisory{background:linear-gradient(135deg,var(--charcoal-2),var(--advisory) 220%)}
     .div-agri{background:linear-gradient(135deg,var(--charcoal-2),var(--agri) 220%)}
     .div-property{background:linear-gradient(135deg,var(--charcoal-2),var(--property) 220%)}
 
-    .service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
     .service-item{border:1px solid var(--line);border-radius:10px;padding:18px;background:var(--charcoal-2)}
     .service-item h3{font-size:18px;margin-bottom:6px}
-    .service-item p{font-size:14px;color:rgba(245,242,236,.7)}
+    .service-item p{font-size:14px;color:rgba(245,242,236,.72)}
 
-    .cta-panel{border:1px solid var(--line);border-radius:14px;background:var(--ivory);color:var(--charcoal);padding:34px}
-    .cta-panel h2{font-size:32px}
-    .cta-panel p{margin-top:10px;color:rgba(31,41,51,.78)}
+    .cta-panel{border:1px solid var(--line);border-radius:14px;background:var(--ivory);color:var(--charcoal);padding:30px}
+    .cta-panel h2{font-size:30px}
+    .cta-panel p{margin-top:10px;color:rgba(31,41,51,.8)}
+    .cta-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 
-    .footer{border-top:1px solid var(--line);padding:34px 0 58px}
+    .footer{border-top:1px solid var(--line);padding:30px 0 50px}
     .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
     .footer p{font-size:12px;color:rgba(245,242,236,.45);font-family:'JetBrains Mono',monospace}
 
-    @media (max-width:920px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:42px}.menu{display:none}}
-    @media (max-width:760px){section{padding:62px 0}.div-grid,.service-list{grid-template-columns:1fr}.hero{padding:84px 0 74px}.hero h1{font-size:34px}.wrap{padding:0 18px}.btn{min-width:140px}}
+    @media (max-width:920px){
+      .hero-grid{grid-template-columns:1fr}
+      .hero h1{font-size:42px}
+      .menu{display:none}
+    }
+
+    @media (max-width:760px){
+      section{padding:56px 0}
+      .hero{padding:78px 0 66px}
+      .hero h1{font-size:34px;line-height:1.07}
+      .lede{font-size:16px;margin-top:12px}
+      .wrap{padding:0 16px}
+      .div-grid,.service-list{grid-template-columns:1fr}
+      .hero-cta,.cta-buttons{gap:8px;margin-top:14px}
+      .btn{width:100%;min-width:0;padding:12px 14px}
+      .cta-panel{padding:22px}
+      .cta-panel h2{font-size:26px}
+    }
   </style>
 </head>
 <body>
@@ -98,8 +116,8 @@
     <div class="wrap">
       <div class="topbar-inner">
         <a href="/" class="brand" aria-label="Sagsoul Holdings">
-          <span class="brand-mark">◆</span>
-          <div class="brand-wordmark"><b>SAGSOUL</b></div>
+          <img src="assets/logo.svg" alt="Codelattice logo" class="brand-logo" />
+          <div class="brand-wordmark"><b>CODELATTICE</b></div>
         </a>
         <ul class="menu">
           <li><a href="/">Home</a></li>
@@ -115,20 +133,24 @@
     <div class="wrap hero-grid">
       <div>
         <span class="eyebrow">Codelattice</span>
-        <h1>Practical execution across <span>property, agriculture, advisory, and tech.</span></h1>
-        <p class="lede">Codelattice is the sister business to Sagsoul, focused on real-economy operations: residential property, production agriculture, business advisory, and technology enablement for Zimbabwean companies.</p>
+        <h1>Commercial results across <span>property, agriculture, advisory, and tech.</span></h1>
+        <p class="lede">We build cashflow in residential property, run production-focused agriculture, and modernize legacy operations for established Zimbabwean companies—backed by Sagsoul technology execution.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Book a strategy call</a>
-          <a href="#divisions" class="btn btn-ghost">See divisions</a>
+          <a href="https://wa.me/263788844602" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WhatsApp us now</a>
+          <a href="mailto:hello@sagsoul.net" class="btn btn-secondary">Email Codelattice</a>
+          <a href="#divisions" class="btn btn-ghost">View divisions</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Operating summary">
-        <span class="eyebrow" style="margin-bottom:10px">Operating focus</span>
+        <div class="panel-logo">
+          <img src="assets/logo.svg" alt="Codelattice logo" />
+          <span class="eyebrow" style="margin:0">Operating focus</span>
+        </div>
         <div class="mini-kpis">
-          <div class="kpi"><div class="v">Property</div><div class="l">Residential buy & rent-out</div></div>
-          <div class="kpi"><div class="v">Agri</div><div class="l">Horticulture & husbandry</div></div>
-          <div class="kpi"><div class="v">Advisory</div><div class="l">Business + tech transition</div></div>
-          <div class="kpi"><div class="v">Sagsoul</div><div class="l">Technology delivery arm</div></div>
+          <div class="kpi"><div class="v">Property</div><div class="l">Buy + rent residential</div></div>
+          <div class="kpi"><div class="v">Agri</div><div class="l">Horticulture + husbandry</div></div>
+          <div class="kpi"><div class="v">Advisory</div><div class="l">Legacy-to-tech transition</div></div>
+          <div class="kpi"><div class="v">Sagsoul</div><div class="l">Technology execution</div></div>
         </div>
       </aside>
     </div>
@@ -143,58 +165,58 @@
       <article class="div-card div-property">
         <span class="div-tag">Property</span>
         <h3>Residential acquisition & rentals</h3>
-        <p>We acquire residential properties, improve their rental readiness, and manage occupancy for consistent long-term cashflow.</p>
+        <p>Acquire, improve, and place quality residential units into managed rental pipelines that prioritize occupancy and stable returns.</p>
       </article>
       <article class="div-card div-agri">
         <span class="div-tag">Agriculture</span>
         <h3>Horticulture, husbandry & equipment rentals</h3>
-        <p>Our agriculture work includes horticulture production, animal husbandry, and equipment rentals supported by practical operations planning.</p>
+        <p>Production planning for crops and livestock, plus equipment rental operations to support efficient on-farm execution.</p>
       </article>
       <article class="div-card div-advisory">
         <span class="div-tag">Advisory</span>
-        <h3>Business & technology consulting</h3>
-        <p>We help established Zimbabwean companies modernize operations, digitize legacy workflows, and adopt technology without disrupting day-to-day business.</p>
+        <h3>Business + tech consulting</h3>
+        <p>Enable traditional Zimbabwean companies to adopt modern systems without shutting down core operations or disrupting revenue flow.</p>
       </article>
       <article class="div-card div-tech">
         <span class="div-tag">Technology (Sagsoul)</span>
-        <h3>Product and systems delivery</h3>
-        <p>Sagsoul remains the core technology engine — delivering systems such as Clubhouse360 and Mbaredirect with strong testing and operational reliability.</p>
+        <h3>Systems delivery that works in production</h3>
+        <p>When implementation needs software, Sagsoul delivers and maintains tested systems such as Clubhouse360 and Mbaredirect.</p>
       </article>
     </div>
   </section>
 
   <section id="services" class="wrap">
     <div class="section-head">
-      <h2>What we do in practice</h2>
+      <h2>Execution services</h2>
       <span class="sec-num">02 / Services</span>
     </div>
     <div class="service-list">
       <article class="service-item">
         <h3>Property operations</h3>
-        <p>Property sourcing, refurbishment planning, rental setup, and active occupancy management for residential units.</p>
+        <p>Deal evaluation, rental readiness, tenant pipeline setup, and portfolio-level occupancy discipline.</p>
       </article>
       <article class="service-item">
-        <h3>Agric production systems</h3>
-        <p>Crop planning for horticulture, livestock routines for husbandry, and operational support for farm equipment rental cycles.</p>
+        <h3>Agriculture operations</h3>
+        <p>Horticulture and husbandry routines, input planning, and practical management support for equipment utilization.</p>
       </article>
       <article class="service-item">
-        <h3>Legacy-to-digital advisory</h3>
-        <p>Hands-on consulting for businesses moving from paper-driven workflows into structured, measurable technology-enabled operations.</p>
+        <h3>Tech adoption advisory</h3>
+        <p>Workflow digitization and management systems design for older companies transitioning from manual operations.</p>
       </article>
       <article class="service-item">
-        <h3>Technology implementation with Sagsoul</h3>
-        <p>When execution requires software, we deploy through Sagsoul with clear specs, rigorous testing, and maintainable delivery.</p>
+        <h3>Implementation with Sagsoul</h3>
+        <p>From advisory strategy to live software deployment with testing rigor, support, and measurable performance outcomes.</p>
       </article>
     </div>
   </section>
 
   <section id="contact" class="wrap">
     <div class="cta-panel">
-      <h2>Let’s plan your next move.</h2>
-      <p>Share your context and we’ll map a practical path across property, agriculture, advisory, or technology implementation.</p>
-      <div class="hero-cta" style="margin-top:18px">
-        <a href="mailto:hello@sagsoul.net" class="btn btn-primary">Email Codelattice</a>
-        <a href="https://wa.me/263788844602" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
+      <h2>Ready to move from plan to execution?</h2>
+      <p>Start with a commercial strategy conversation. We’ll map the fastest practical route across property, agriculture, advisory, or technology delivery.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/263788844602" target="_blank" rel="noopener noreferrer" class="btn btn-primary">WhatsApp us now</a>
+        <a href="mailto:hello@sagsoul.net" class="btn btn-secondary">Email Codelattice</a>
       </div>
     </div>
   </section>
@@ -202,8 +224,8 @@
   <footer class="footer">
     <div class="wrap footer-inner">
       <a href="/" class="brand" style="gap:.5rem">
-        <span class="brand-mark">◆</span>
-        <div class="brand-wordmark" style="font-size:.9rem"><b>SAGSOUL</b></div>
+        <img src="assets/logo.svg" alt="Codelattice logo" class="brand-logo" />
+        <div class="brand-wordmark" style="font-size:.9rem"><b>CODELATTICE</b></div>
       </a>
       <p>&copy; <span id="year"></span> Codelattice · Harare, Zimbabwe</p>
     </div>
