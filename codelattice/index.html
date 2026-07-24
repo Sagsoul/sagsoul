@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Codelattice Advisors — Four Disciplines. One Lattice.</title>
-  <meta name="description" content="Codelattice Advisors unifies technology, advisory, agriculture, and property under one disciplined operating identity." />
+  <title>Codelattice — Advisory, Agriculture, Property, Technology</title>
+  <meta name="description" content="Codelattice operates across business advisory, agriculture, property, and technology with disciplined, practical execution for the Zimbabwean market." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
@@ -12,9 +12,7 @@
     :root{
       --charcoal:#1F2933;
       --charcoal-2:#2B3742;
-      --slate:#323F4B;
       --ivory:#F7F1E2;
-      --ivory-dim:#EAE5DA;
       --ember:#CF5815;
       --ember-soft:#E08A4F;
       --line: rgba(245,242,236,0.14);
@@ -23,113 +21,67 @@
       --advisory:#5C4A3E;
       --agri:#4C5A3E;
       --property:#8A6A3E;
+      --wa:#25D366;
+      --wa-dark:#1DA851;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      background:var(--charcoal);
-      color:var(--ivory);
-      font-family:'Inter',sans-serif;
-      line-height:1.55;
-      -webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit;text-decoration:none}
-    .wrap{max-width:1060px;margin:0 auto;padding:0 28px}
-    section{padding:88px 0}
+    body{background:var(--charcoal);color:var(--ivory);font-family:'Inter',sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+    section{padding:84px 0}
     h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em}
-    .eyebrow{
-      font-family:'JetBrains Mono',monospace;
-      font-size:11px;
-      letter-spacing:0.14em;
-      text-transform:uppercase;
-      color:var(--ember-soft);
-      margin-bottom:14px;
-      display:block;
-    }
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:20;
-      background:rgba(31,41,51,0.9);
-      border-bottom:1px solid var(--line);
-      backdrop-filter:blur(8px);
-    }
-    .topbar-inner{
-      height:64px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
+    .topbar{position:sticky;top:0;z-index:30;background:rgba(31,41,51,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    .topbar-inner{height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
     .brand{display:flex;align-items:center;gap:10px}
-    .brand-mark{
-      width:24px;height:24px;border-radius:6px;background:var(--ember);
-      display:grid;place-items:center;font-size:14px;color:var(--ivory)
-    }
-    .brand-wordmark{font-family:'Fraunces',serif;font-size:16px;letter-spacing:0.02em}
-    .menu{display:flex;gap:18px;list-style:none;color:rgba(245,242,236,.72);font-size:14px}
+    .brand-mark{width:24px;height:24px;border-radius:6px;background:var(--ember);display:grid;place-items:center;font-size:14px;color:var(--ivory)}
+    .brand-wordmark{font-family:'Fraunces',serif;font-size:16px;letter-spacing:.02em}
+    .menu{display:flex;gap:18px;list-style:none;color:rgba(245,242,236,.74);font-size:14px}
     .menu a:hover{color:var(--ivory)}
 
-    .hero{
-      padding:112px 0 96px;
-      border-bottom:1px solid var(--line);
-      background:
-        radial-gradient(circle at 80% 0%, rgba(224,138,79,0.16), transparent 35%),
-        var(--charcoal);
-    }
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
-    .hero h1{font-size:56px;line-height:1.03;max-width:760px}
+    .hero{padding:106px 0 92px;border-bottom:1px solid var(--line);background:radial-gradient(circle at 80% 0%, rgba(224,138,79,.15), transparent 35%),var(--charcoal)}
+    .hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:30px;align-items:center}
+    .eyebrow{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ember-soft);margin-bottom:14px;display:block}
+    .hero h1{font-size:54px;line-height:1.03;max-width:740px}
     .hero h1 span{color:var(--ember-soft)}
-    .lede{margin-top:18px;font-size:18px;color:rgba(245,242,236,0.74);max-width:620px}
-    .hero-cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:600;font-size:14px;transition:.2s ease}
+    .lede{margin-top:18px;font-size:18px;color:rgba(245,242,236,.74);max-width:620px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+
+    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:12px 18px;font-weight:600;font-size:14px;transition:.2s ease;min-width:160px}
     .btn-primary{background:var(--ember);color:var(--ivory)}
     .btn-primary:hover{background:var(--ember-soft)}
     .btn-ghost{border:1px solid var(--line);color:var(--ivory)}
     .btn-ghost:hover{border-color:rgba(245,242,236,.35)}
+    .btn-whatsapp{background:var(--wa);border:1px solid var(--wa);color:#fff;font-weight:700}
+    .btn-whatsapp:hover{background:var(--wa-dark);border-color:var(--wa-dark)}
 
-    .hero-panel{
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:var(--charcoal-2);
-      padding:22px;
-    }
+    .hero-panel{border:1px solid var(--line);border-radius:14px;background:var(--charcoal-2);padding:22px}
     .mini-kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px}
     .kpi{border:1px solid var(--line);border-radius:10px;padding:12px;background:rgba(0,0,0,.08)}
-    .kpi .v{font-family:'Fraunces',serif;font-size:28px;color:var(--ember-soft)}
+    .kpi .v{font-family:'Fraunces',serif;font-size:26px;color:var(--ember-soft)}
     .kpi .l{font-size:12px;color:rgba(245,242,236,.62)}
 
     .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:34px;gap:12px;flex-wrap:wrap}
     .section-head h2{font-size:34px}
-    .sec-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(245,242,236,0.42)}
+    .sec-num{font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(245,242,236,.42)}
 
     .div-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .div-card{
-      border-radius:10px;padding:28px;border:1px solid var(--line);position:relative;overflow:hidden;
-      transition:transform .2s ease,border-color .2s ease;
-    }
+    .div-card{border-radius:10px;padding:28px;border:1px solid var(--line);transition:transform .2s ease,border-color .2s ease}
     .div-card:hover{transform:translateY(-2px);border-color:rgba(224,138,79,.55)}
-    .div-tag{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.88}
+    .div-tag{font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.9}
     .div-card h3{font-size:24px;margin:10px 0 8px}
-    .div-card p{font-size:14px;color:rgba(245,242,236,.72);max-width:350px}
+    .div-card p{font-size:14px;color:rgba(245,242,236,.72);max-width:360px}
     .div-tech{background:linear-gradient(135deg,var(--charcoal-2),var(--tech) 220%)}
     .div-advisory{background:linear-gradient(135deg,var(--charcoal-2),var(--advisory) 220%)}
     .div-agri{background:linear-gradient(135deg,var(--charcoal-2),var(--agri) 220%)}
     .div-property{background:linear-gradient(135deg,var(--charcoal-2),var(--property) 220%)}
 
-    .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .voice-card{border:1px solid var(--line);border-radius:10px;padding:22px;background:var(--charcoal-2)}
-    .voice-card .n{font-family:'Fraunces',serif;font-size:30px;color:var(--ember-soft);margin-bottom:8px}
-    .voice-card h3{font-size:18px;margin-bottom:6px}
-    .voice-card p{font-size:14px;color:rgba(245,242,236,.68)}
+    .service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:20px}
+    .service-item{border:1px solid var(--line);border-radius:10px;padding:18px;background:var(--charcoal-2)}
+    .service-item h3{font-size:18px;margin-bottom:6px}
+    .service-item p{font-size:14px;color:rgba(245,242,236,.7)}
 
-    .cta-panel{
-      border:1px solid var(--line);
-      border-radius:14px;
-      background:var(--ivory);
-      color:var(--charcoal);
-      padding:34px;
-    }
+    .cta-panel{border:1px solid var(--line);border-radius:14px;background:var(--ivory);color:var(--charcoal);padding:34px}
     .cta-panel h2{font-size:32px}
     .cta-panel p{margin-top:10px;color:rgba(31,41,51,.78)}
 
@@ -137,18 +89,8 @@
     .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
     .footer p{font-size:12px;color:rgba(245,242,236,.45);font-family:'JetBrains Mono',monospace}
 
-    @media (max-width:900px){
-      .hero-grid{grid-template-columns:1fr}
-      .hero h1{font-size:44px}
-      .menu{display:none}
-    }
-    @media (max-width:760px){
-      section{padding:62px 0}
-      .div-grid,.voice-grid{grid-template-columns:1fr}
-      .hero{padding:88px 0 78px}
-      .hero h1{font-size:36px}
-      .wrap{padding:0 18px}
-    }
+    @media (max-width:920px){.hero-grid{grid-template-columns:1fr}.hero h1{font-size:42px}.menu{display:none}}
+    @media (max-width:760px){section{padding:62px 0}.div-grid,.service-list{grid-template-columns:1fr}.hero{padding:84px 0 74px}.hero h1{font-size:34px}.wrap{padding:0 18px}.btn{min-width:140px}}
   </style>
 </head>
 <body>
@@ -161,8 +103,8 @@
         </a>
         <ul class="menu">
           <li><a href="/">Home</a></li>
+          <li><a href="#divisions">Divisions</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#voice">Voice</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -172,86 +114,87 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Codelattice Advisors</span>
-        <h1>Four disciplines. <span>One lattice.</span></h1>
-        <p class="lede">Technology, advisory, agriculture, and property — held together by one disciplined identity. Built for boardrooms, farm gates, building sites, and diaspora clients alike.</p>
+        <span class="eyebrow">Codelattice</span>
+        <h1>Practical execution across <span>property, agriculture, advisory, and tech.</span></h1>
+        <p class="lede">Codelattice is the sister business to Sagsoul, focused on real-economy operations: residential property, production agriculture, business advisory, and technology enablement for Zimbabwean companies.</p>
         <div class="hero-cta">
           <a href="#contact" class="btn btn-primary">Book a strategy call</a>
-          <a href="#services" class="btn btn-ghost">See service lines</a>
+          <a href="#divisions" class="btn btn-ghost">See divisions</a>
         </div>
       </div>
       <aside class="hero-panel" aria-label="Operating summary">
-        <span class="eyebrow" style="margin-bottom:10px">Operating model</span>
+        <span class="eyebrow" style="margin-bottom:10px">Operating focus</span>
         <div class="mini-kpis">
-          <div class="kpi"><div class="v">4</div><div class="l">Disciplines</div></div>
-          <div class="kpi"><div class="v">1</div><div class="l">Identity system</div></div>
-          <div class="kpi"><div class="v">NDA</div><div class="l">Confidential by default</div></div>
-          <div class="kpi"><div class="v">Exec</div><div class="l">Senior-led delivery</div></div>
+          <div class="kpi"><div class="v">Property</div><div class="l">Residential buy & rent-out</div></div>
+          <div class="kpi"><div class="v">Agri</div><div class="l">Horticulture & husbandry</div></div>
+          <div class="kpi"><div class="v">Advisory</div><div class="l">Business + tech transition</div></div>
+          <div class="kpi"><div class="v">Sagsoul</div><div class="l">Technology delivery arm</div></div>
         </div>
       </aside>
     </div>
   </section>
 
-  <section id="services" class="wrap">
+  <section id="divisions" class="wrap">
     <div class="section-head">
-      <h2>Divisions</h2>
-      <span class="sec-num">01 / Structure</span>
+      <h2>Business divisions</h2>
+      <span class="sec-num">01 / Divisions</span>
     </div>
     <div class="div-grid">
-      <article class="div-card div-tech">
-        <span class="div-tag">Technology</span>
-        <h3>Sagsoul</h3>
-        <p>Clubhouse360 and Mbaredirect — the technology brand keeps its own name while carrying the lattice endorsement.</p>
-      </article>
-      <article class="div-card div-advisory">
-        <span class="div-tag">Advisory</span>
-        <h3>Codelattice Advisory</h3>
-        <p>Business process and systems consulting for companies — full parent branding with disciplined delivery.</p>
+      <article class="div-card div-property">
+        <span class="div-tag">Property</span>
+        <h3>Residential acquisition & rentals</h3>
+        <p>We acquire residential properties, improve their rental readiness, and manage occupancy for consistent long-term cashflow.</p>
       </article>
       <article class="div-card div-agri">
         <span class="div-tag">Agriculture</span>
-        <h3>Codelattice Agri</h3>
-        <p>Vegetable and poultry production with operational rigor, planning discipline, and practical field execution.</p>
+        <h3>Horticulture, husbandry & equipment rentals</h3>
+        <p>Our agriculture work includes horticulture production, animal husbandry, and equipment rentals supported by practical operations planning.</p>
       </article>
-      <article class="div-card div-property">
-        <span class="div-tag">Property</span>
-        <h3>Codelattice Property</h3>
-        <p>Acquisition, development, and rental management — including a clear lane for diaspora-backed projects.</p>
+      <article class="div-card div-advisory">
+        <span class="div-tag">Advisory</span>
+        <h3>Business & technology consulting</h3>
+        <p>We help established Zimbabwean companies modernize operations, digitize legacy workflows, and adopt technology without disrupting day-to-day business.</p>
+      </article>
+      <article class="div-card div-tech">
+        <span class="div-tag">Technology (Sagsoul)</span>
+        <h3>Product and systems delivery</h3>
+        <p>Sagsoul remains the core technology engine — delivering systems such as Clubhouse360 and Mbaredirect with strong testing and operational reliability.</p>
       </article>
     </div>
   </section>
 
-  <section id="voice" class="wrap">
+  <section id="services" class="wrap">
     <div class="section-head">
-      <h2>Tone of voice</h2>
-      <span class="sec-num">02 / Voice</span>
+      <h2>What we do in practice</h2>
+      <span class="sec-num">02 / Services</span>
     </div>
-    <div class="voice-grid">
-      <article class="voice-card">
-        <div class="n">01</div>
-        <h3>Direct</h3>
-        <p>Say the thing plainly. No hedging, no filler before the point.</p>
+    <div class="service-list">
+      <article class="service-item">
+        <h3>Property operations</h3>
+        <p>Property sourcing, refurbishment planning, rental setup, and active occupancy management for residential units.</p>
       </article>
-      <article class="voice-card">
-        <div class="n">02</div>
-        <h3>Accountable</h3>
-        <p>Ownership is named — who did what, and what happens next.</p>
+      <article class="service-item">
+        <h3>Agric production systems</h3>
+        <p>Crop planning for horticulture, livestock routines for husbandry, and operational support for farm equipment rental cycles.</p>
       </article>
-      <article class="voice-card">
-        <div class="n">03</div>
-        <h3>Grounded</h3>
-        <p>Specific numbers, dates, and units over vague reassurance.</p>
+      <article class="service-item">
+        <h3>Legacy-to-digital advisory</h3>
+        <p>Hands-on consulting for businesses moving from paper-driven workflows into structured, measurable technology-enabled operations.</p>
+      </article>
+      <article class="service-item">
+        <h3>Technology implementation with Sagsoul</h3>
+        <p>When execution requires software, we deploy through Sagsoul with clear specs, rigorous testing, and maintainable delivery.</p>
       </article>
     </div>
   </section>
 
   <section id="contact" class="wrap">
     <div class="cta-panel">
-      <h2>Let’s structure your next move.</h2>
-      <p>Share your current context and we’ll map a practical, measurable path across technology, advisory, agriculture, or property.</p>
+      <h2>Let’s plan your next move.</h2>
+      <p>Share your context and we’ll map a practical path across property, agriculture, advisory, or technology implementation.</p>
       <div class="hero-cta" style="margin-top:18px">
         <a href="mailto:hello@sagsoul.net" class="btn btn-primary">Email Codelattice</a>
-        <a href="https://wa.me/263788844602" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" style="border-color:var(--line-dark)">WhatsApp</a>
+        <a href="https://wa.me/263788844602" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">WhatsApp</a>
       </div>
     </div>
   </section>
@@ -262,7 +205,7 @@
         <span class="brand-mark">◆</span>
         <div class="brand-wordmark" style="font-size:.9rem"><b>SAGSOUL</b></div>
       </a>
-      <p>&copy; <span id="year"></span> Codelattice Advisors · Harare, Zimbabwe</p>
+      <p>&copy; <span id="year"></span> Codelattice · Harare, Zimbabwe</p>
     </div>
   </footer>
 
